@@ -1,0 +1,137 @@
+﻿@model Model.ViewModel.NewsCollectionViewModel
+@{
+    ViewBag.Title = "News";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="bod-container">
+    <div class="nheader">
+        <img src="~/Images/ScenicDetail/s1.png" class="Nimg1" />      
+        <p class="Np1" style="font-size:larger">攻略 @ViewBag.Ncount  条</p>
+        <p class="Np1">@Html.ActionLink("写下足迹", "BuildNews", "User")</p>      
+    </div>
+    <div class="center">
+        <div class="leftbar">
+            <div class="leftbar-top">
+                <p class="Nspan">热门攻略</p>
+            </div>
+            <div class="inner">
+                @*系统推荐栏目*@
+                <div class="inner-child1">
+                    <p class="np2">系统推荐</p>                  
+                    <ul>
+                        @foreach (var item in Model.adminnews)
+                        {
+                            <li>
+                                <img src="@item.UserHeadimg" class="nimg2" />
+                                <p class="np3">@item.UserName</p>
+                                <p class="np4">@item.NewsTitle</p>
+                                <img src="@item.NewsCoverImg" class="nimg3" />                                                                
+                                <p class="np5">@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.NewsId })</p>
+                            </li>
+                        }
+                    </ul>                        
+                </div>
+                @*热门攻略栏目*@
+				<p class="np2-1">热门</p>
+                <div class="inner-child2">                  
+                    <ul>
+                        @foreach (var item in Model.hotNews)
+                        {
+                            <li>
+                                <div> 
+                                    <div class="ndiv1">
+                                      <p style="margin:0px;">@item.UserName</p>
+                                      <p>@item.PostTime</p>
+                                    </div>                                                                    
+                                    <p class="np6">@Html.ActionLink("点赞", "NewsDetail", new { id = @item.NewsId })</p>                                   
+                                    <div class="ndiv2">
+                                        <p class="np7-1">@item.NewsTitle</p>
+                                        <p class="np7-2">@item.NewsContent</p>
+                                        <img src="@item.NewsCoverImg" class="nimg4" />                                       
+                                        <div class="ndiv3">
+                                            <p class="np7">@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.NewsId })</p>
+                                            <p class="np7">点赞数:<span>@item.NewsVote</span></p>                                          
+                                        </div>
+                                        <div style="float:left;width:220px;">
+                                            <hr />
+                                        </div>                                                                             
+                                    </div>
+                                </div>
+                            </li>
+                        }                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rightbar">
+            <ul>
+                @foreach (var item in Model.News)
+                {
+                    <li>                       
+                        <div>                                                       
+                            <div class="ndiv4">
+                                <img src="@item.UserHeadimg" style="width:50px; height:50px;" />
+                            </div>
+                            <div class="ndiv5">
+                                <p class="np9">@item.UserName</p>
+								<p class="np10">
+									@*@Ajax.ActionLink("点赞", "News", new { id = @item.NewsId }, new AjaxOptions() { HttpMethod = "Post", UpdateTargetId = "voteshow", InsertionMode = InsertionMode.Replace })*@
+									<input type="submit" id="voteing"class="rvote" value="点赞" data-newsid="@item.NewsId" data-newvotes="@item.NewsVote">
+									<input type="text" class="showvote" value="@item.NewsVote">
+								</p>
+                                <p class="np10">@item.PostTime </p>                                                              
+                            </div>                           
+                            <div class="ndiv6"> 
+                                <p class="np11">@item.NewsTitle</p>
+                                <p class="np12">@item.NewsContent</p>
+                                <img src="@item.NewsCoverImg" class="nimg5" style="margin-left:15px;"/>
+                            </div> 
+                            <div class="ndiv7">
+                                <p class="np13">@Html.ActionLink("查看详细","NewsDetail",new {id=@item.NewsId})</p>
+                                <div class="np13" id="voteshow"> @*@Html.Partial("_vote", item)*@</div>                                                            
+                            </div>                                                                                                                                            
+                        </div>
+                    </li>
+                }               
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script type="text/javascript">
+	$(".rvote").each(function () {
+		$(this).click(function () {
+			var newsid = $(this).data("newsid");
+			var data = $(this).next();
+			$.ajax({
+				type : "POST",
+				url:"/Home/News",
+				dataType : "text",
+				data: {id:newsid},
+				async : true,
+				success: function (ret) {
+					if (ret == -1) {
+						alert('请先登录');
+					}
+					else if (ret == -2) {
+						alert('点过赞了');
+					}
+					else if (ret == 0) {
+						alert('网络异常');
+					}
+					else {
+						data.val(ret);
+					}										
+				},				
+				error : function() {
+					alert('请求有误');
+				}
+			});
+		});
+	});
+</script>
+
+	
+

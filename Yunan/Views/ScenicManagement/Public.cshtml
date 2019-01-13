@@ -1,0 +1,240 @@
+﻿@model Model.Scenic
+@{
+    ViewBag.Title = "Public";
+    Layout = "~/Views/Shared/_LayoutAdminManagement.cshtml";
+}
+
+@section head{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/ueditor/ueditor.config.js"></script>
+    <script src="~/ueditor/ueditor.all.js"></script>
+    <script src="~/Scripts/dropify.min.js"></script>
+    <link href="~/Content/ActivityPublsih.css" rel="stylesheet" />
+    <link href="~/Content/dropify.min.css" rel="stylesheet" />
+}
+
+<script type="text/javascript">
+    @*$(function () {
+        $('#AdminScenic').blur(function () {
+            $.ajax({
+                url: '@Url.Action("GetAdminName", "ScenicManagement")',
+                data: { UserID: $('#UserID').val() },
+                type: 'POST',
+                success: function (msg) {
+                    $('#CheckAdminsResult').remove();
+                    $('.GetAdminName').append("<span id='CheckAdminsResult'>确认发布者名称：<b>" + msg + "</b></span>").css({ 'color': '#00CD00', 'font-size': '16px' });
+                }
+            });
+        });
+    });*@
+
+    var editorOption = {
+        initialFrameWidth: 784,
+        initialFrameHeight: 400
+    };
+    var editorDetails = new baidu.editor.ui.Editor(editorOption);
+    editorDetails.render('ScenicContent');
+
+    //var editorConditions = {
+    //    initialFrameWidth: 784,
+    //    initialFrameHeight: 200
+    //};
+    //var editorConditions = new baidu.editor.ui.Editor(editorConditions);
+    //editorConditions.render('AttendConditions');
+</script>
+
+
+<div class="publish_wrap">
+    @using (Html.BeginForm("Public", "ScenicManagement", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="publish_txt">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">景区类别</span>
+                            @Html.DropDownList("type", ViewBag.ScenicStyle as SelectList, new { @class = "form-control", placeholder = "请选择景区类别" })
+                            @Html.ValidationMessageFor(act => act.type, "", new { style = "color:	#EE0000" })
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">旅游类别</span>
+                            @Html.DropDownList("ScenicStyle", ViewBag.ScenicStyle as SelectList, new { @class = "form-control", placeholder = "请选择旅游类别" })
+                            @Html.ValidationMessageFor(act => act.ScenicStyle, "", new { style = "color:	#EE0000" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            @*<div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-6 GetUserName">
+                        @Html.ValidationMessageFor(act=>act.AdminScenic, "", new { style = "color:	#EE0000" })
+                    </div>
+                </div>
+            </div>*@
+
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">景区标题</span>
+                            @Html.EditorFor(act => act.ScenicTitle, new { htmlAttributes = new { @class = "form-control", placeholder = "请输入景区标题" } })
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">时间</span>
+                            @Html.EditorFor(act => act.Days, new { htmlAttributes = new { @class = "form-control", placeholder = "请输入旅行时间" } })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        @Html.ValidationMessageFor(act => act.ScenicTitle, "", new { style = "color:	#EE0000" })
+                    </div>
+                    <div class="col-lg-6">
+                        @Html.ValidationMessageFor(act => act.Days, "", new { style = "color:	#EE0000" })
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="basic-addon1">点赞数</span>
+                        @Html.TextBoxFor(act => act.ScenicVote, new { @class = "form-control", placeholder = "请输入活动名称" })
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    @Html.ValidationMessageFor(act => act.ScenicVote, "", new { style = "color:	#EE0000" })
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="basic-addon1">地点</span>
+                        @Html.TextBoxFor(act => act.City, new { @class = "form-control", placeholder = "请输入旅游城市" })
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="basic-addon1">关键字</span>
+                        @Html.TextBoxFor(act => act.ScenicKeyWord, new { @class = "form-control", placeholder = "请输入关键字" })
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    @Html.ValidationMessageFor(act => act.City, "", new { style = "color:	#EE0000" })
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="basic-addon1">价格</span>
+                        @Html.TextBoxFor(act => act.ScenicPrice, new { @class = "form-control", placeholder = "请输入价格)" })
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    @Html.ValidationMessageFor(act => act.ScenicPrice, "", new { style = "color:	#EE0000" })
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <input type="file" name="file" id="input-file-french-1" class="dropify-fr" data-default-file="" />
+                </div>
+            </div>
+
+            <br />
+            @*<div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="basic-addon1">参赛条件</span>
+                        @Html.TextAreaFor(act => act.AttendConditions, new { @class = "form-control", placeholder = "请输入参赛条件" })
+                    </div>
+                </div>
+            </div>*@
+
+            <br />
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon" id="basic-addon1">景区详情</span>
+                        @Html.TextAreaFor(act => act.ScenicContent, new { @class = "form-control", placeholder = "请输入景区详情" })
+                        @Html.ValidationMessageFor(act => act.ScenicContent, "", new { style = "color:	#EE0000" })
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <input type="submit" class="btn btn-success btn-lg" value="立即发布" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+
+@*<script>
+            $(document).ready(function(){
+                // Basic
+                $('.dropify').dropify();
+
+                // Translated
+                $('.dropify-fr').dropify({
+                    messages: {
+                        'default': '<b>请上传景区封面图</b><br>点击或拖拽文件到这里',
+			        'replace': '点击或拖拽文件到这里来替换文件',
+			        'remove':  '移除文件',
+			        'error':   '对不起，你上传的文件太大了'
+                    }
+                });
+
+                // Used events
+                var drEvent = $('.dropify-event').dropify();
+
+                drEvent.on('dropify.beforeClear', function(event, element){
+                    return confirm("Do you really want to delete \"" + element.filename + "\" ?");
+                });
+
+                drEvent.on('dropify.afterClear', function(event, element){
+                    alert('File deleted');
+                });
+            });
+</script>*@
+
+<h2>Public</h2>
+

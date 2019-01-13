@@ -1,0 +1,97 @@
+﻿@model Yunan.Models.NewsCollectionViewModel
+@{
+    ViewBag.Title = "News";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="bod-container">
+    <div class="nheader">
+        <img src="~/Images/ScenicDetail/s1.png" class="Nimg1" />      
+        <p class="Np1" style="font-size:larger">攻略 @ViewBag.Ncount  条</p>
+        <p class="Np1">@Html.ActionLink("写下足迹", "BuildNews", "User")</p>      
+    </div>
+    <div class="center">
+        <div class="leftbar">
+            <div class="leftbar-top">
+                <p class="Nspan">热门攻略</p>
+            </div>
+            <div class="inner">
+                @*系统推荐栏目*@
+                <div class="inner-child1">
+                    <p class="np2">系统推荐</p>                  
+                    <ul>
+                        @foreach (var item in Model.adminnews)
+                        {
+                            <li>
+                                <img src="@item.userimg" class="nimg2" />
+                                <p class="np3">@item.name</p>
+                                <p class="np4">@item.newstitle</p>
+                                <img src="@item.img" class="nimg3" />                                                                
+                                <p class="np5">@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.id })</p>
+                            </li>
+                        }
+                    </ul>                        
+                </div>
+                @*热门攻略栏目*@
+                <div class="inner-child2">
+                    <p class="np2">热门</p>
+                    <ul>
+                        @foreach (var item in Model.hotNews)
+                        {
+                            <li>
+                                <div> 
+                                    <div class="ndiv1">
+                                      <p style="margin:0px;">@item.name</p>
+                                      <p>@item.postime</p>
+                                    </div>                                                                    
+                                    <p class="np6">@Html.ActionLink("点赞", "NewsDetail", new { id = @item.id })</p>                                   
+                                    <div class="ndiv2">
+                                        <p class="np7-1">@item.newstitle</p>
+                                        <p class="np7-2">@item.ncontext</p>
+                                        <img src="@item.img" class="nimg4" />                                       
+                                        <div class="ndiv3">
+                                            <p class="np7">@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.id })</p>
+                                            <p class="np7">点赞数:<span>@item.vote</span></p>                                          
+                                        </div>
+                                        <div style="float:left;width:220px;">
+                                            <hr />
+                                        </div>                                                                             
+                                    </div>
+                                </div>
+                            </li>
+                        }                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rightbar">
+            <ul>
+                @foreach (var item in Model.News)
+                {
+                    <li>                       
+                        <div>                                                       
+                            <div class="ndiv4">
+                                <img src="@item.userimg" style="width:50px; height:50px;" />
+                            </div>
+                            <div class="ndiv5">
+                                <p class="np9">@item.name</p>
+                                <p class="np10">@Ajax.ActionLink("点赞", "News", new { id = @item.id }, new AjaxOptions() { HttpMethod = "Post", UpdateTargetId = "voteshow", InsertionMode = InsertionMode.Replace })</p>
+                                <p class="np10">@item.postime </p>                                                              
+                            </div>                           
+                            <div class="ndiv6">
+                                <p class="np11">@item.newstitle</p>
+                                <p class="np12">@item.ncontext</p>
+                                <img src="@item.img" class="nimg5"/>
+                            </div> 
+                            <div class="ndiv7">
+                                <p class="np13">@Html.ActionLink("查看详细","NewsDetail",new {id=@item.id})</p>
+                                <div class="np13" id="voteshow"> @Html.Partial("_vote", item)</div>                                                            
+                            </div>                                                                                                                                            
+                        </div>
+                    </li>
+                }               
+            </ul>
+        </div>
+    </div>
+</div>
+

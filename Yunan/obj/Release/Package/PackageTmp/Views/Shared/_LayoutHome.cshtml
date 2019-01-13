@@ -1,0 +1,74 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>   
+    @Styles.Render("~/Content/mycss")    
+    @RenderSection("styles",required:false)          
+</head>
+<body style="margin-top:0px;padding-top:0px;">
+    <div class="nav-home">
+        <div class="nav-headbefor">
+            <img src="~/Images/logol.png" class="log-img" />
+            <input type="text" class="headbefor-textbox" />
+            <input type="submit" class="headbefore-sub" />
+            <div class="bod-login">
+                @if (ViewBag.UserName == null)
+                {
+                    @Html.Partial("HomeLogin")
+                }
+                else
+                {
+                    @Html.Partial("HasChecked")
+                }
+
+            </div>           
+        </div>
+        <div class="nav-head">
+            <ul class="head-ul">
+                <li>.</li>
+                <li>@Html.ActionLink("首页","Index","Home",new { },new {style="",type="自然风光"})
+                    <ul>
+                        <li>首页</li>                       
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("景区分类", "ScenicSort", "Home")
+                    <ul>
+                        <li>@Html.ActionLink("景区分类", "ScenicSort","Home")</li>
+                        <li>@Html.ActionLink("热门景区", "ScenicSort", "Home", new { }, new { style = "" })</li>                        
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("攻略", "News", "Home")
+                    <ul>
+                        <li>@Html.ActionLink("攻略","News","Home")</li>                       
+                        <li>@Html.ActionLink("写下足迹", "BuildNews", "User", new { }, new { })</li>
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("个人中心", "Index", "User")
+                    <ul>
+                        <li>@Html.ActionLink("登录","Login", "Home")</li>
+                        <li>@Html.ActionLink("注册", "Register", "Home")</li>
+                        <li>@Html.ActionLink("个人中心", "Index","User")</li>
+                        <li>@Html.ActionLink("购物车", "OrderShow", "User")</li>
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("购物车", "OrderShow", "User")</li>
+                <li>管理员</li>
+                <li>更多…</li>                
+            </ul>
+        </div>             
+    </div>   
+    <div>
+        @RenderBody()
+    </div>
+    <div class="bod-footer">
+        <p style="line-height:60px;">CopyRight@江西师范大学彩云之南旅游网.2018</p>       
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @*@Scripts.Render("~/bundles/jqueryui")*@
+    @RenderSection("scripts", required: false)   
+</body>
+</html>

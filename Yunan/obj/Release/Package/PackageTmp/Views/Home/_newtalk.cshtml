@@ -1,0 +1,27 @@
+﻿@model Yunan.Models.NewsDetailViewModel
+
+<div class="ntmain">  
+    @if (Model.untvm == null)
+    {
+        <p></p>
+    }
+    else
+    {
+        <ul>
+            @foreach (var item in Model.untvm)
+            {
+                <li>
+                    <div class="ntchild">
+                        <img src="" class="ntimg" />
+                        <p class="ntp1">@item.userName</p>
+                        <p class="ntp2">举报</p>
+                        <p class="ntp3">@item.postTime</p>
+                        <div class="ntcontext">@item.context</div>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+    
+</div>
+

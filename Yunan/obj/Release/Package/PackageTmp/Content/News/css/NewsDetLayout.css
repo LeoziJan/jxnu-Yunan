@@ -1,0 +1,194 @@
+﻿body {
+}
+
+.ndContainer{
+    width:1000px;
+    height:auto;
+    min-height:650px;
+    margin:0 auto;
+    background-color:#efecec;  
+    position:relative;
+    overflow:hidden;
+}
+
+.ndnews{
+    float:left;
+    width:970px;
+    height:auto;
+    min-height:280px;  
+    position:relative;
+    background-color:white;
+    margin-left:15px;
+    margin-top:15px;     
+}
+
+.ndnews div{
+    margin-top:10px;
+    float:left;
+    position:relative; 
+}
+
+.ndtop{
+    width:960px;
+    height:70px;
+    margin-left:10px;         
+}
+
+.ndtopimg{
+    width:65px;
+    height:65px;
+    float:left;
+    position:relative;  
+}
+
+.ndp1{
+    width:800px;
+    height:20px;
+    margin:0px;
+    margin-top:20px;
+    float:left;
+    position:relative;       
+}
+
+.ndp2{
+    width:800px;
+    height:20px;   
+    float:left;
+    position:relative;      
+}
+
+.ndtitle{
+    width:860px;
+    height:30px;
+    margin-left:15px;       
+}
+
+.ndcontext{
+    width:940px;
+    height:auto;
+    min-height:70px;
+    margin-left:20px;       
+}
+
+.ndimg{
+    width:920px;
+    height:auto;
+    min-height:40px;     
+}
+
+.ndimg ul{
+    list-style:none;
+}
+
+.ndimg ul li{
+    float:left;
+    position:relative;
+    margin-left:10px;
+    width:220px;
+    height:160px;
+}
+
+.ntmain{
+    width:900px;
+    height:auto;
+    float:left;
+    position:relative; 
+    margin-top:10px;
+    background-color:white;
+    margin-left:50px;
+}
+
+.ntmain ul{
+    list-style:none;
+}
+
+.ntmain ul li{
+    list-style:none;
+    height:auto;
+    min-height:100px;
+    margin-top:15px;
+}
+.ntchild{
+    width:900px;
+    height:auto;   
+}
+
+.ntuser{
+    width:810px;
+    float:left;
+    position:relative;
+    margin-left:100px;
+    margin-top:10px;   
+}
+
+.ntimg{
+    width:50px;
+    height:50px;
+    float:left;
+    position:relative;   
+}
+
+.ntp1{
+    width:700px;
+    height:20px;
+    margin:0px;
+    margin-top:9px;
+    float:left;
+    position:relative; 
+}
+
+.ntp2{
+    width:50px;
+    height:20px;
+    float:left;
+    position:relative;   
+}
+
+.ntp3{
+    width:750px;
+    height:20px;
+    float:left;
+    position:relative;   
+}
+
+.ntcontext{
+    width:851px;
+    height:auto;
+    min-height:45px;
+    float:left;
+    position:relative;
+    word-break:break-word;
+    border-bottom:2px ridge #efecec;    
+}
+
+.subtalk{
+    width:250px;
+    height:100px;
+    position:fixed;
+    left:1400px;
+    top:300px;
+    background-color:#efecec;  
+}
+
+.subtalk p{
+    float:left;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.tec{
+    width:200px;
+}
+
+.sub{
+    width:50px;
+    height:25px;
+    border:none;
+    margin-left:190px;
+}
+
+.sub:hover{
+    margin-top:2px;
+}
+
+

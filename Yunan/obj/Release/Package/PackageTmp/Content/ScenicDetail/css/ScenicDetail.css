@@ -1,0 +1,272 @@
+﻿body {
+}
+
+.sd-top{
+    width:1200px;
+    height:340px;
+    margin:0 auto;
+    background-color:#efecec;
+    z-index:0;  
+}
+
+.sd-top-left{
+    width:470px;
+    height:320px;
+    float:left;      
+    z-index:0;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.leftimg{
+    width:470px;
+    height:320px;
+    background-size:cover;
+}
+
+.sd-top-right span{
+    width:690px;
+    height:60px;
+    float:left;
+    position:relative;  
+    font-size:20px;  
+    color:black;
+    word-break:break-word;
+    word-wrap:hyphenate;
+    overflow:hidden;
+}
+
+.sd-top-right p{
+    width:600px;
+    height:auto;
+    float:left;
+    position:relative;
+}
+
+.sd-top-right img{
+    width:25px;
+    height:25px;
+    margin-left:20px;
+    margin-right:10px;
+    float:left;   
+}
+
+.sd-top-right ul {
+    width:auto;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    float: left;
+}   
+
+.sd-top-right ul li{
+    float:left;
+    position:relative;
+    list-style:none;
+    margin:0px;
+    margin-right:5px;
+    padding:0px;
+}
+
+.sd-top-right-price{
+    width:690px;
+    height:auto;
+    border:1px ridge rgba(255, 106, 0, 0.70);
+    float:left;
+    z-index:0;
+    border-radius:3px;
+}
+
+.sd-buy{
+    position:relative;
+    margin-left:500px;
+    width:100px;    
+    background-color:aquamarine;
+}
+
+.sd-p3{
+    font-family:YouYuan;
+    font-size:x-large;
+    font-weight:500;
+    color:#ff6a00;
+    width:600px;
+    height:40px;
+    float:left;
+    position:relative;
+}
+.sd-p1{
+    color:black;
+    font-size:smaller;
+    font-weight:400;   
+}
+
+.sd-p2{
+    color:red;
+    margin-bottom:2px;  
+}
+
+.sd-p4{
+    float:left;
+    width:80px;
+    margin-top:5px;
+    height:35px;
+    height:auto;
+    position:relative;
+    font-size:x-large;
+}
+
+.sd-top-right{
+    width:690px;
+    height:auto;
+    float:left;       
+    z-index:0;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.sd-mian{
+    height:auto;
+    min-height:600px;
+    width:1200px;
+    margin:0 auto;   
+    margin-top:5px;
+    z-index:0;
+    position:relative;
+    background-color:#efecec;
+    overflow:hidden;
+}
+
+.sd-main-top{
+    width:1020px;
+    overflow:hidden;
+    height:310px;
+    background-color:#0086aa;
+    margin:0 auto;
+
+}
+
+.sd-main-top img{
+    margin-top:10px;
+}
+
+.topp1{
+    position:relative;
+    width:1020px;
+    height:50px;
+    text-align:center;
+    line-height:51px;
+    font-size:20px;
+    color:#ffd800;
+    margin:0 auto;
+    margin:0px;
+    padding:0px;
+}
+
+.sd-mian-content{
+    width:1020px;
+    height:unset;
+    min-height:400px;
+    max-height:1200px;
+    margin:0 auto;
+    position:relative;
+    background-color:#efecec;
+  
+   
+}
+
+.sd-mian-container{
+    width:1020px;
+    height:410px;
+    margin-left:0 auto;
+    float:left;
+    position:relative;
+    background-color:#0086aa;    
+}
+
+sd.sd-mian-content ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    height:auto;  
+}
+
+.sd-mian-content ul li{
+    float:left;
+    width:1020px;
+    height:auto;
+    list-style:none;
+
+}
+
+.sd-mian-left{
+    width:500px;
+    height:350px;
+    margin-left:50px;
+    margin-top:10px;
+    float:left;
+    background-color:grey;
+    position:relative;
+    z-index:0;      
+}
+
+.sd-mian-right{
+    width:400px;
+    height:260px;   
+    float:left;
+    margin-top:50px;
+    position:relative;
+    z-index:0;
+    background-color:#005d7d;
+    border-radius:5px;
+}
+
+.rightp1{
+    width:200px;
+    height:150px;
+    margin-left:120px;
+    margin-top:60px;
+    color:white;
+}
+
+.rightp2{
+    width:100px;
+    height:60px;
+    margin-left:250px;
+    color:white;
+}
+
+.sd-main-zindex{
+    width:200px;
+    height:90px;
+    position:absolute;
+    margin-left:460px;
+    margin-top:100px;
+    border:2px ridge grey;
+    border-radius:5px;
+    overflow:visible;
+    word-break:keep-all;
+    word-wrap:hyphenate;
+    font-family:YouYuan;
+    font-size:30px;
+    color:#ffd800;
+    border-right:none;
+    border-left:none;
+    background-color:rgba(0, 0, 0, 0.34);
+}
+
+.sd-p5{ 
+    text-align:center;
+    line-height:90px;
+}
+
+.sd-span1{
+    position:relative;
+    top:100px;
+    left:200px;
+    font-family:YouYuan;
+    font-size:90px;
+    font-weight:800;
+    color:white;
+
+}

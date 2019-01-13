@@ -1,0 +1,39 @@
+﻿@model Model.ViewModel.NewBuildViewModel
+
+@{
+    ViewBag.Title = "BuildNews";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="nbcontainer">
+    <div class="nbtop">
+        <p class="nbp1">写下足迹</p>
+        <p class="nbp2">hello @ViewBag.user</p>       
+        <p style="width:150px;">,这是你的第： @ViewBag.ncount 条记录</p>
+    </div>
+    <div class="nbmain">
+        @using (Html.BeginForm("BuildNews", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "")           
+                <div>
+                    *标题：@Html.TextBoxFor(n => n.title, new { @class = "nbtext", placeholder = "标题" })
+                    @Html.ValidationMessageFor(n=>n.title)
+                </div>
+                <div>
+                    *内容：@Html.TextAreaFor(n => n.context, new { @class = "", placeholder = "内容" })
+                    @Html.ValidationMessageFor(n => n.context)
+                </div>
+                <div>                 
+                   *上传图片： <input type="file" name="img" style="margin-left:70px;" />               
+                </div>
+                <div>
+                    <input type="submit" value="提交" class="nbsub" />
+                </div>         
+        }
+    </div>
+</div>
+
+@section styles{
+<link href="~/Content/News/css/NewsBuild.css" rel="stylesheet" />
+    }

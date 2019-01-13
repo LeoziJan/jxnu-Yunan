@@ -1,0 +1,128 @@
+﻿
+/*用户主页*/
+body {
+}
+
+.centerul{
+    list-style:none;
+    padding:0px;
+    margin-top:5px;
+
+}
+
+.centerul li{
+    width:960px;
+    height:auto;
+    min-height:120px;
+    background-color:#f8f8f8;
+    border-radius:2px;
+    border:1px groove #f8f8f8;
+    margin-left:20px;
+    margin-top:20px;
+    overflow:hidden;
+}
+
+.uchead{
+    width:960px;
+    height:43px;
+    margin-top:10px;
+    margin-left:20px;   
+    background-color:#f8f8f8; 
+    border-radius:2px;
+    border:1px groove white;
+}
+.ucheadleft{
+    width:700px;
+    height:42px;
+    float:left;
+    position:relative;   
+}
+
+.ucheadright{
+    width:250px;
+    height:43px;
+    float:left;
+    position:relative;
+    line-height:43px;
+    text-align:center;
+}
+
+.ucheadright a{
+    color:black;
+    text-decoration:none;
+    width:50px;
+    height:40px;
+    line-height:30px;
+    border:1px solid #59a0e1;
+    border-bottom:none;
+    
+    margin:0px;
+    padding:0px;
+}
+
+.uca1{
+    background-color:#59a0e1;
+    color:white;
+}
+
+.ucmain{
+    width:950px;
+    height:auto;
+    position:relative;
+    margin-left:10px;
+}
+
+.ucmimg{
+    width:45px;
+    height:45px;
+    float:left;
+    position:relative;
+
+}
+
+.ucmright{
+    width:850px;
+    height:41px;
+    margin:0px;
+    margin-top:3px;
+    float:left;
+    position:relative;
+    word-break:break-word;
+    word-wrap:hyphenate;
+}
+
+.ucmcontext{
+    width:900px;
+    height:auto;
+    margin:0px;
+    margin-left:50px;
+    float:left;
+    position:relative;
+    word-break:break-word;
+    word-wrap:hyphenate;
+
+}
+
+.ucmright p{
+    float:left;
+    position:relative;
+    margin:0px;
+    width:auto;
+}
+
+.ucmcontext p{
+    width:900px;
+    height:auto;
+    min-height:40px;
+    margin:0px;
+    word-break:break-all;
+    word-wrap:hyphenate;
+}
+
+.shalter{
+    width:950px;
+    margin-left:10px;
+    height:20px;
+    float:left;
+    position:relative;
+}

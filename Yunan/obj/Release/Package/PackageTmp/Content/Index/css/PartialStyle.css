@@ -1,0 +1,16 @@
+﻿body {
+}
+
+.span1{
+    font-size:18px;
+    color:#ff7145;
+}
+
+.aclink1{
+    color:white;
+}
+
+.aclink1:hover{
+    color:white;
+    text-decoration:none;
+}

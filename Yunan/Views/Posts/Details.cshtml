@@ -1,0 +1,51 @@
+﻿@model Model.Talks
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdminManagement.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Talks</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.News.NewsTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.News.NewsTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TPostTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TPostTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TalkContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TalkContent)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TalkId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

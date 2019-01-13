@@ -1,0 +1,88 @@
+﻿@model IEnumerable<Model.Scenic>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdminManagement.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ScenicTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScenicContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScenicVote)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScenicStyle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScenicPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Days)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScenicCoverImg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ScenicKeyWord)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScenicTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScenicContent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScenicVote)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScenicStyle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScenicPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Days)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScenicCoverImg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ScenicKeyWord)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ScenicId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ScenicId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ScenicId })
+        </td>
+    </tr>
+}
+
+</table>

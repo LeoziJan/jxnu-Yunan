@@ -1,0 +1,71 @@
+﻿@model Yunan.Models.UserEditviewModel
+
+@{
+    ViewBag.Title = "EditUserInfo";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+<div class="edhead">
+    <p class="edp1">Hi! @Model.UserName</p>
+    <p> ,请完善你的信息</p>
+</div>
+<div class="edmain">
+    @using (Html.BeginForm("EditUserInfo", "User", FormMethod.Post,new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true,"")
+        <div>
+            <p>姓名：
+                @Html.EditorFor(u => u.UserName)
+                @Html.ValidationMessageFor(u => u.UserName)
+            </p>
+        </div>              
+        <div>
+            <p>电话：
+                @Html.EditorFor(u => u.UserTel)
+                @Html.ValidationMessageFor(u => u.UserTel)
+            </p>
+        </div>
+        <div>
+            <p>生日：
+                @Html.EditorFor(u => u.Birthday)
+                @Html.ValidationMessageFor(u => u.Birthday)
+            </p>
+        </div>
+        <div>
+            <p>地址：
+                @Html.EditorFor(u => u.UserAddress)
+                @Html.ValidationMessageFor(u => u.UserAddress)
+            </p>
+        </div>
+        <div>
+            <p>头像：
+                <input type="file" name="headimg" />
+            </p>
+        </div>
+        <div>
+            <p>签名：               
+            </p>           
+        </div>
+        <div class="div1" style="height:80px;margin-top:1px">        
+                @Html.TextAreaFor(u => u.UserMotto)
+                @Html.ValidationMessageFor(u => u.UserMotto)           
+        </div>
+        <div>
+            <p>证件：
+                @Html.EditorFor(u => u.IdCard)
+                @Html.ValidationMessageFor(u => u.IdCard)
+            </p>
+        </div>    
+        <div style="margin-top:25px;">
+            <input type="submit" value="提交" class="edsub" />          
+        </div>
+    }
+    
+</div>
+
+
+@section styles{
+<link href="~/Content/User/css/EditInfo.css" rel="stylesheet" />
+    }

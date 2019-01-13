@@ -1,0 +1,123 @@
+﻿body {
+}
+.center{
+    width:1210px;
+    height:auto;
+    margin:0 auto;
+    position:relative;  
+}
+
+.nheader{
+    float:left;
+    position:relative;
+    width:1200px;
+    height:350px;   
+    margin-left:300px;
+    text-align:center;
+    background-color:#0086aa;    
+}
+
+.nheader a{
+    color:#ffd800;
+    text-decoration:none;
+}
+
+.nheader a:hover{
+    color:#ff6a00;
+}
+
+.leftbar{
+    margin-top:10px;
+    float:left;
+    position:relative;
+    width:300px;
+    height:auto;
+    border:1px solid #808080;
+}
+
+.rightbar{
+    float:left;
+    width:880px;
+    height:auto;
+    position:relative;
+    margin-left:22px;
+    margin-top:10px;
+    background-color:#efecec;    
+}
+
+.rightbar ul{
+    list-style:none;
+}
+
+.rightbar ul li{
+    list-style:none;
+    width:805px;
+    height:510px;
+    background-color:white;
+    margin-top:20px;
+
+}
+
+.leftbar-top{
+    float:left;
+    position:relative;
+    width:300px;
+    height:41px; 
+    background-color:#0086aa;       
+}
+
+.inner{
+    width:300px;
+    height:auto;
+    float:left;
+    position:relative;
+    background-color:#efecec;
+}
+
+.inner-child1{
+    float:left;
+    position:relative;
+    margin-top:10px;
+    width:300px;
+    height:500px;  
+}
+
+.inner-child1 ul{
+    list-style:none;
+    margin:0px;   
+    padding:0px;
+    margin-top:30px;
+    margin-left:10px;
+}
+
+.inner-child1 ul li{
+    list-style:none;
+    position:relative;
+    background-color:white;
+    width:275px;
+    height:240px;
+}
+
+.inner-child2{
+    float:left;
+    position:relative;
+    width:300px;
+    height:800px;   
+    overflow:scroll;
+    overflow-x:hidden;
+    margin-top:1px;    
+}
+
+.inner-child2 ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    margin-left:15px;   
+}	
+
+.inner-child2 ul li{
+    width:255px;
+    height:320px;
+    background-color:white;
+    margin-top:20px;
+}

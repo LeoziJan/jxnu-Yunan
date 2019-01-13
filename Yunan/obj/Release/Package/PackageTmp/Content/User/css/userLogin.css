@@ -1,0 +1,132 @@
+﻿
+/*注册页面*/
+body {
+}
+
+.Lcontain{
+    width:900px;
+    height:430px;
+    margin:0 auto;
+    margin-top:180px;
+    border-radius:6px;
+    border:1px groove grey;
+    background-color:rgba(0, 0, 0, 0.35);
+}
+
+.Lheader{
+    width:900px;
+    height:80px;   
+}
+
+.Lleftbar{
+    width:600px;
+    height:310px;  
+    float:left;
+    position:relative;
+    margin-left:20px;   
+}
+
+.Lrightbar{
+    width:260px;
+    height:310px;
+    margin-left:10px;
+    float:left;
+    position:relative;
+    
+}
+
+.Lrightbar p{
+    text-align:center;
+}
+
+.Lrightbar ul{
+    list-style:none;
+}
+.leftbarchild{
+    width:350px;
+    height:50px;
+    position:relative;
+    margin-top:30px;
+    margin-left:50px;
+    border:1px groove white;
+    border-left:none;
+    border-right:none;   
+}
+
+.Lcheck{
+    margin-left:120px;
+    position:relative;
+    width:200px;
+    height:40px;
+    margin-top:30px;
+    border-radius:2px;
+    border:1px groove white;
+}
+.Lp{
+    float:left;
+    position:relative;
+    font-size:20px;
+    margin:0px;
+    padding:0px;
+    height:40px;
+    line-height:40px;
+    margin-top:40px;
+    margin-left:5px;
+    width:60px;
+    text-align:center;
+    color:white;
+    
+}
+
+.Lp a{
+    color:white;
+    text-decoration:none;
+}
+
+.Lp:hover{
+    background-color:rgba(0, 0, 0, 0.40);
+    border-radius:2px;
+}
+
+.Lp1{
+    float:right;
+    position:relative;
+    font-size:20px;
+    margin:0px;
+    padding:0px;
+    margin-right:10px;
+    width:60px;
+    height:40px;
+    border-radius:2px;
+    line-height:40px;
+    margin-top:40px;      
+}
+
+.Lp1 a{
+    color:white; 
+    text-decoration:none;
+}
+
+.Lp1:hover a{
+    color:#ff6a00;
+}
+
+.Lbox{
+    width:220px;
+    height:25px;
+    border:none;     
+}
+
+.Lsub{
+    width:200px;
+    height:40px;
+    border:0px;
+    background-color:rgba(255, 255, 255, 0.00);
+    line-height:40px;
+    text-align:center;
+    font-size:20px;
+}
+
+.Lsub:hover{
+    background-color:white;
+}

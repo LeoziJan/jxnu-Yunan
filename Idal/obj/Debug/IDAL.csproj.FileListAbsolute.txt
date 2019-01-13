@@ -1,0 +1,62 @@
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\bin\Debug\Idal.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\bin\Debug\Idal.pdb
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\obj\Debug\Idal.csprojResolveAssemblyReference.cache
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\obj\Debug\Idal.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\obj\Debug\Idal.pdb
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\bin\Debug\Model.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\bin\Debug\Model.pdb
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Idal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\Yunan\Idal\bin\Debug\Idal.dll
+C:\Users\Administrator\Desktop\Yunan\Idal\bin\Debug\Idal.pdb
+C:\Users\Administrator\Desktop\Yunan\Idal\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\Yunan\Idal\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Yunan\Idal\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\Yunan\Idal\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Yunan\Idal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\Yunan\Idal\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Yunan\Idal\obj\Debug\Idal.dll
+C:\Users\Administrator\Desktop\Yunan\Idal\obj\Debug\Idal.pdb
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Debug\Idal.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Debug\Idal.pdb
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Debug\Model.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Debug\Model.pdb
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\liuzhi\Desktop\Yunan\Idal\obj\Debug\Idal.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\obj\Debug\Idal.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Idal.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Idal.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Model.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Model.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\obj\Debug\Idal.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\obj\Debug\Idal.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Idal.dll.config
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Autofac.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Autofac.Integration.Mvc.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.Helpers.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.Mvc.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.Razor.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.WebPages.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Autofac.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Autofac.Integration.Mvc.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.Helpers.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.Mvc.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.Razor.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.WebPages.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Idal\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll

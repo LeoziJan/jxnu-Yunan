@@ -1,0 +1,83 @@
+﻿body {
+}
+
+.nbcontainer{
+    width:700px;
+    height:620px;
+    margin: 0 auto;
+    background-color:#f8f8f8;
+    border-radius:3px;
+    border:1px groove #f8f8f8; 
+}
+
+.nbcontainer div{
+    float:left;
+    position:relative;  
+}
+
+.nbtop{
+    width:698px;
+    height:60px; 
+    border-bottom:1px solid grey;
+    border-radius:2px;   
+}
+
+.nbtop p{
+    float:left;
+    position:relative;   
+    text-align:center;
+}
+
+.nbp1{   
+    color:deepskyblue;
+    width:660px;
+    font-size:18px;   
+}
+
+.nbp2{
+    color:#ff6a00;
+    width:auto;
+    min-width:100px;
+}
+
+.nbmain{
+    width:698px;
+    height:400px;
+    margin-top:20px;
+}
+
+.nbmain div{
+    width:500px;
+    height:auto;
+    min-height:30px;
+    float:left;
+    position:relative;
+    margin-left:220px;
+    margin-top:15px;
+}
+
+.nbtext{
+    width:220px;
+}
+
+.nbmain textarea{
+    width:220px;
+    height:110px;
+}
+
+.nbsub{
+    width:80px;
+    height:40px;
+    border-radius:3px;
+    background-color:#dddddd;
+    border:1px groove white;
+    line-height:40px;
+    text-align:center;
+    margin-left:100px;
+    margin-top:15px;
+}
+
+.nbsub:hover{
+    color:deepskyblue;
+    margin-top:16px;
+}

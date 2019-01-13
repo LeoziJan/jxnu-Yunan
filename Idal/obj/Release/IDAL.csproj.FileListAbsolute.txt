@@ -1,0 +1,10 @@
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Release\Idal.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Release\Idal.pdb
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Release\Model.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Release\EntityFramework.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Release\Model.pdb
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Release\EntityFramework.xml
+C:\Users\liuzhi\Desktop\Yunan\Idal\bin\Release\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\obj\Release\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\liuzhi\Desktop\Yunan\Idal\obj\Release\Idal.dll
+C:\Users\liuzhi\Desktop\Yunan\Idal\obj\Release\Idal.pdb

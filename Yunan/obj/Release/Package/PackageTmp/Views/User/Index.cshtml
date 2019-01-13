@@ -1,0 +1,44 @@
+﻿@model IEnumerable< Model.News>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="uchead">
+    <div class="ucheadleft">
+        <p>最新动态</p>
+    </div>
+    <div class="ucheadright">
+        @Html.ActionLink("攻略","Index")       
+        @Html.ActionLink("订单", "OrderShow",new { }, new{ @class="uca1"})        
+    </div>
+</div>
+<ul class="centerul">
+    @foreach (var item in Model)
+    {
+        <li>          
+            <div class="ucmain">
+                <div class="ucmimg">
+                    <img src="@item.User.UserHeadimg" style="width:45px;height:45px;" />
+                </div>
+                <div class="ucmright">
+                    <p>@item.User.UserName</p>
+                    <p style="width:auto;max-width:550px;min-width:100px;">的攻略：@item.NewsTitle</p>
+                    <p style="margin-left:20px;">@item.PostTime</p>
+                    <p>@Html.ActionLink("删除","Delete",new {id=@item.NewsId })</p>
+                </div>
+                <div class="ucmcontext">
+                   <p>&nbsp;&nbsp; @item.NewsContent</p>                  
+                </div>                
+            </div>
+        </li>
+    }
+    
+</ul>
+
+
+
+@section styles{
+   <link href="~/Content/User/css/UserCenter.css" rel="stylesheet" />
+    }

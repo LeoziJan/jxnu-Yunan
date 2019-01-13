@@ -1,0 +1,35 @@
+﻿@using Webdiyer.WebControls.Mvc
+@model IPagedList<Yunan.Models.ScenicListViewModel>
+
+
+<ul class="display1-ul2">
+    @foreach (var item in Model)
+            {
+        <li>
+            <div class="ul2-img" id="ul2img" style="z-index:0;background-image:url(../../@item.coverimg)">
+                <div class="ul2-slid" id="ul2slid" style="z-index:1">
+                    <p class="up1">@Html.ActionLink("查看详细", "ScenicDetail", new { id = @item.id })</p>
+                </div>
+            </div>
+            <div class="ul2-detail">
+                <p>@Html.ActionLink("喜欢", "")<span>: @item.vote</span></p>
+                <p>@item.title</p>
+                <p style="color:#ff6a00">@item.price</p>
+                <p>@item.keyWord</p>
+            </div>
+        </li>
+    }
+</ul>
+
+
+<div class="page">
+    @Ajax.Pager(Model,new PagerOptions
+{
+    PageIndexParameterName = "id",
+    ContainerTagName = "ul",
+    CssClass = "page_index",
+    CurrentPagerItemTemplate = "<li class=\"pageActive\">{0}</li>",
+    PagerItemTemplate = "<li>{0}</li>",
+    DisabledPagerItemTemplate = "<li class=\"pageDisable\"><a>{0}</a></li>",
+}).AjaxOptions(a => a.SetUpdateTargetId("sorts"))
+</div>

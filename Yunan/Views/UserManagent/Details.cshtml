@@ -1,0 +1,83 @@
+﻿@model Model.Users
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdminManagement.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Users</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserPassward)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserPassward)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserTel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserTel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birthday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserHeadimg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserHeadimg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usermotto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usermotto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCard)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

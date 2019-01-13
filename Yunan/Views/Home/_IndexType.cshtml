@@ -1,0 +1,23 @@
+﻿
+@model  Model.ViewModel.ScenicCollectionViewModel
+@{
+    Layout = null;
+}
+<ul class="bod-mian-ul">
+    @foreach (var item in Model.ScenicType)
+    {
+        <li>
+            <div class="main-ul-div1" style="background-image:url(../../@item.ScenicCoverImg);">
+                <div class="main-ul-div2">
+                    <p class="p3">￥@Html.ActionLink(@item.ScenicPrice.ToString(),"ScenicDetail","Home",new {id=@item.ScenicId },new{@class="aclink1" })</p>
+                </div>
+            </div>
+            <div class="main-ul-div3">
+                <p>@item.ScenicTitle</p>
+                <p style="color:#999">彩云价格：<span class="span1">@item.ScenicPrice</span></p>
+                <p>描述：<span style="color:#999">@item.ScenicKeyWord</span></p>
+            </div>
+        </li>
+    }
+
+</ul>               

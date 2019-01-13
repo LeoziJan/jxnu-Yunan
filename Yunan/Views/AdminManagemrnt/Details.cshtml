@@ -1,0 +1,51 @@
+﻿@model Model.Admins
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdminManagement.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Admins</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminPassWard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminPassWard)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeadImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeadImg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminFlag)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AdminId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

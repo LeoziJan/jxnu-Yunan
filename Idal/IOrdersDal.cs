@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Model;
+
+namespace Idal
+{
+    public partial interface IOrdersDal:ICommonDal<Orders>
+    {
+        IQueryable<Orders> GetOrderByUser(Users user);
+    }
+}

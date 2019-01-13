@@ -1,0 +1,79 @@
+﻿@model Yunan.Models.ScenicDetailViewModel
+
+@{
+    ViewBag.Title = "ScenicDetail";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="bod-container">
+    <div class="sd-top">
+        <div class="sd-top-left">
+        <img src="@Model.scenic.ScenicCoverImg" class="leftimg" />
+        </div>
+        <div class="sd-top-right">
+            <span>【@Model.scenic.ScenicTitle】+@Model.scenic.ScenicContent</span>
+            <p>
+                <img src="" />
+                【游玩方式】@Model.scenic.ScenicStyle
+            </p>
+            <p >
+                <img src="" />
+                【景区类型】@Model.scenic.type
+            </p>
+            <p >
+                <img src=""  />
+                【所在城市】@Model.scenic.City
+            </p>
+            <p >
+                <img src="" />
+                【旅游时间】@Model.scenic.Days<per> 天</per> 
+            </p>
+            <p style="width:150px;margin-bottom:5px">
+                <img src="" />
+                【缤纷景点】
+            </p>
+                <ul>
+                    @foreach (var item in Model.scenicdetail)
+                    {
+
+                        <li>@item.ScenicName</li>                          
+                    }
+                </ul>
+            
+            <div class="sd-top-right-price">
+                <h class="sd-p3" >￥@Model.scenic.ScenicPrice</h>
+                <h class="sd-p4">@Html.ActionLink("购买", "BuildOrder","User",new {sid=Model.scenic.ScenicId},new { })</h>
+                <p class="sd-p1">活动信息：</p>
+                <p class="sd-p2">历史成交：@Model.count</p>                             
+            </div>            
+        </div>
+    </div>
+    <div class="sd-mian">       
+        <div class="sd-main-top">
+            <img src="~/Images/ScenicDetail/s1.png" />
+            <p class="topp1">旅游线路+景点规划</p>
+        </div>
+        <div class="sd-mian-content">
+            <ul style="padding-left:0px;">
+                @foreach (var item in Model.scenicdetail)
+                {
+                    <li>
+                        <div class="sd-mian-container">
+                            <div class="sd-mian-left">
+                                <img src="@item.ScenicImg" />
+                            </div>
+                            <div class="sd-mian-right">
+                                <p class="rightp1">&nbsp;&nbsp;@item.ScenicDescribe</p>
+                                <p class="rightp2">----@item.ScenicName</p>
+                            </div>
+                            <div class="sd-main-zindex">
+                                <p class="sd-p5">@item.ScenicName</p>
+                            </div>
+                        </div>
+                    </li>
+                }                
+            </ul>
+        </div>
+    </div>
+</div>
+

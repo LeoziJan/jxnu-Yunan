@@ -1,0 +1,116 @@
+﻿body {
+}
+
+.ocontainer{
+    width:900px;
+    height:auto;
+    float:left;
+    position:relative;
+   
+}
+
+.ocontainer div{
+    float:left;
+    position:relative;
+    
+}
+.omain{
+    width:898px;
+    height:180px;
+
+}
+
+.omain div{
+    float:left;
+    position:relative;
+}
+
+.omain a{
+    color:deepskyblue;
+    text-decoration:none;
+}
+
+.omain ul{
+    list-style:none;
+}
+
+.omain ul li{
+    width:890px;
+    height:240px;
+    margin-top:10px;
+    background-color:#f8f8f8;
+    border-radius:2px;
+    border:1px groove #f8f8f8;
+    margin-left:20px;
+    margin-top:20px;
+    overflow:hidden;
+}
+
+.omtop{
+    width:870px;
+    height:22px;
+    margin-left:15px;
+    margin-top:10px;   
+    border:none;
+}
+
+.omtop p{
+    width:200px;
+    height:20px;
+    margin:0px;
+    padding:0px;
+    margin-left:10px;
+    border:none;
+}
+
+.omimg{
+    width:200px;
+    height:120px;
+    margin-left:20px;
+    margin-top:5px;
+    background-size:cover;
+}
+
+
+
+.omsel{
+    width:605px;
+    height:130px;
+    float:left;
+    position:relative;       
+}
+
+.omsel p{
+    float:left;
+    position:relative;  
+    margin:0px;
+    padding:0px;
+    margin-top:10px;
+    margin-left:20px;
+    width:580px;
+    height:20px;
+}
+
+
+.ombuttom{
+    width:650px;
+    height:32px;
+    float:left;
+    margin-left:200px;
+    margin-top:20px;
+}
+
+.ombuttom p{
+    float:left;
+    position:relative;   
+    margin:0px;
+    padding:0px;
+    width:200px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+}
+.omp1{
+    margin-left:250px;
+    color:#ff6a00;
+}

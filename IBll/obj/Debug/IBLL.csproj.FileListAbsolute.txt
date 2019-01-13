@@ -1,0 +1,99 @@
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\IBll.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\IBll.pdb
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\obj\Debug\IBll.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\obj\Debug\IBll.pdb
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\Idal.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\Model.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\Idal.pdb
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\Model.pdb
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\IBll\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\IBll.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\IBll.pdb
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\Idal.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\Idal.pdb
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Yunan\IBll\obj\Debug\IBll.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\obj\Debug\IBll.pdb
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\EnvDTE.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\stdole.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\Administrator\Desktop\Yunan\IBll\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\IBll.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\IBll.pdb
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\Idal.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\Model.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\EnvDTE.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\stdole.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\Idal.pdb
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\Model.pdb
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+C:\Users\liuzhi\Desktop\Yunan\IBll\obj\Debug\IBll.dll
+C:\Users\liuzhi\Desktop\Yunan\IBll\obj\Debug\IBll.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\IBll.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\IBll.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\AutoMapper.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Idal.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Microsoft.Data.Entity.Design.Extensibility.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Model.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\System.ValueTuple.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\EnvDTE.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\stdole.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Idal.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Model.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\AutoMapper.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\AutoMapper.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\System.ValueTuple.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\obj\Debug\IBll.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\obj\Debug\IBll.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\IBll.dll.config
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Autofac.Configuration.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Autofac.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\StructureMap.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Autofac.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\StructureMap.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\IBll\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll

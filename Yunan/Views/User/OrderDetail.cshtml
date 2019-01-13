@@ -1,0 +1,41 @@
+﻿@model Model.ViewModel.UOrderDetailViewModel
+
+@{
+    ViewBag.Title = "OrderDetail";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="dehead">
+    <p>订单号<p><p> @Model.order.OrderId</p>
+    <p class="dep1">总价：</p><p style="color:#ff6a00">@Model.order.TotalPrice</p>
+    <p class="dep2"> @Model.order.BuildTime</p>
+</div>
+<div class="demian">
+    <ul>
+        @foreach (var item in Model.odetail)
+        {
+            <li>
+                <div class="dcontext">
+                    <div class="dmainleft">
+                        <img src="~/@item.simg" />
+                        <p>@item.stitle</p>
+                        <p style="color:#ff6a00">单价：@item.price</p>
+                    </div>
+                    <div class="dmainright">
+                        <p>地址： @item.Address</p>
+                        <p>联系方式：@item.phone</p>
+                        <p style="width:210px;">时间：@item.begintime -</p><p style="width:160px">@item.finishtime</p>
+                        <p>人数：@item.pnumber</p>
+                        <p>出行方式：@item.transport</p>                      
+                    </div>
+                </div>
+            </li>
+        }
+        
+    </ul>
+</div>
+
+
+@section styles{
+<link href="~/Content/User/css/orderDetailstyle.css" rel="stylesheet" />
+    }

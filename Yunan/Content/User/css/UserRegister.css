@@ -1,0 +1,148 @@
+﻿body {
+}
+
+.rcontain{
+    width:905px;
+    height:auto;
+    margin:0 auto;
+    margin-top:180px;
+    border-radius:6px;
+    border:1px groove grey;
+    background-color:rgba(0, 0, 0, 0.35);
+    overflow:hidden;
+}
+
+.rheader{
+    width:900px;
+    height:80px;   
+}
+
+.rleftbar{
+    width:600px;
+    height:480px;  
+    float:left;
+    position:relative;
+    margin-left:20px;   
+    text-align:center;
+}
+
+.rleftchild{
+    width:450px;
+    height:42px;
+    position:relative;
+    margin-top:10px;
+    margin-left:50px;
+    border-bottom:1px groove white;      
+}
+
+.Lp{
+    float:left;
+    position:relative;
+    font-size:20px;
+    margin:0px;
+    padding:0px;
+    height:40px;
+    line-height:40px;
+    margin-top:40px;
+    margin-left:5px;
+    width:60px;
+    text-align:center;
+    color:white;
+    
+}
+
+.Lp a{
+    color:white;
+    text-decoration:none;
+}
+
+.Lp:hover{
+    background-color:rgba(0, 0, 0, 0.40);
+    border-radius:2px;
+}
+
+.Lp1{
+    float:right;
+    position:relative;
+    font-size:20px;
+    margin:0px;
+    padding:0px;
+    margin-right:10px;
+    width:60px;
+    height:40px;
+    border-radius:2px;
+    line-height:40px;
+    margin-top:40px;   
+}
+
+.Lp1 a{
+    color:white;
+    text-decoration:none;
+}
+
+.Lp1:hover a{
+    color:white;
+}
+
+.rp1{
+    float:left;
+    position:relative;  
+    line-height:40px;
+    width:80px;
+    height:38px;
+    margin:0px;
+    margin-top:0px;
+    padding:0px;
+    font-size:10px;
+   
+}
+
+.rp{
+    float:left;
+    position:relative;
+    margin:0px;
+    margin-left:10px;
+    margin-top:10px;
+    padding:0px;  
+}
+
+.rconfirm{
+    margin-left:120px;
+    position:relative;
+    width:200px;
+    height:40px;
+    margin-top:18px;  
+
+}
+
+.rrightbar{
+    width:260px;
+    height:480px;
+    margin-left:10px;
+    float:left;
+    position:relative;  
+}
+
+.rrightbar p{
+    text-align:center;
+}
+
+.rrightbar{
+    list-style:none;
+}
+
+.regsubmit{
+    width:150px;
+    height:40px;
+    position:relative;
+    line-height:40px;   
+    font-size:20px;     
+    margin-top:5px;
+    border-radius:2px;
+    border:1px groove white;
+    background-color:rgba(255, 255, 255, 0.00);
+}
+
+.regsubmit:hover{
+    background-color:white;
+}

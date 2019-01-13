@@ -1,0 +1,87 @@
+﻿body {
+}
+
+.edhead{
+    width:900px;
+    height:50px;
+    float:left;
+    position:relative;
+    margin-left:20px;
+    margin-top:15px;
+    background-color:#f8f8f8; 
+    border-radius:2px;
+    border:1px groove white;
+    
+}
+
+.edmain{
+    width:900px;
+    height:auto;
+    min-height:420px;
+    float:left;
+    position:relative;
+    margin-left:20px;
+    margin-top:15px;
+    background-color:#f8f8f8; 
+    border-radius:2px;
+    border:1px groove white;
+
+}
+
+.edmain div{
+    width:800px;
+    height:30px;
+    float:left;
+    position:relative;
+    margin-left:50px;    
+    margin-top:10px;
+}
+
+.edmain p{
+    width:650px;
+    height:28px;
+    line-height:28px;
+    margin:0px;
+    padding:0px;
+    margin-left:100px;
+
+}
+
+.edmain text-box{
+    width:260px;
+    height:25px;
+    border-radius:1px;
+}
+
+.edsub{
+    width:60px;
+    height:30px;
+    margin-left:200px;  
+}
+
+.edhead p{
+    float:left;
+    position:relative;
+}
+
+.edp1{
+    color:#ff6a00;
+}
+
+.div1{
+    width:800px;
+    height:70px !important;
+    float:left;
+    position:relative;
+    margin-left:50px;      
+}
+
+.div1 textarea{
+    width:250px;
+    height:65px;
+    margin-left:158px;
+    border:1px groove #d1d1d1;
+    border-radius:2px;
+    word-break:break-all;
+    word-wrap:hyphenate;
+}

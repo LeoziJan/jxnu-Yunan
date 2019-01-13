@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--top景区信息-->
+<root>
+  <setting>
+    <index>index1</index>
+    <vlaue>1</vlaue>
+  </setting>
+  <setting>
+    <index>index2</index>
+    <vlaue>2</vlaue>
+  </setting>
+  <setting>
+    <index>index3</index>
+    <vlaue>3</vlaue>
+  </setting>
+  <setting>
+    <index>index4</index>
+    <vlaue>4</vlaue>
+  </setting>
+  <setting>
+    <index>index5</index>
+    <vlaue>5</vlaue>
+  </setting>
+</root>

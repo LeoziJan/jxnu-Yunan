@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <setting>
+    <index>1</index>
+    <value>飞机</value>
+  </setting>
+  <setting>
+    <index>2</index>
+    <value>火车</value>
+  </setting>
+  <setting>
+    <index>3</index>
+    <value>大巴</value>
+  </setting>
+  <setting>
+    <index>4</index>
+    <value>游轮</value>
+  </setting>
+  
+</root>

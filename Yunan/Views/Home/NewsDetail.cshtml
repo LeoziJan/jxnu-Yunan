@@ -1,0 +1,53 @@
+﻿@model Model.ViewModel.NewsDetailViewModel
+
+@{
+    ViewBag.Title = "NewsDetail";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="ndContainer">
+    <div class="ndnews">
+        <div class="ndtop">
+            <img src="@Model.news.User.UserHeadimg" class="ndtopimg" />
+            <p class="ndp1">
+                @Model.news.User.UserName
+            </p>
+            <p class="ndp2">
+                @Model.news.PostTime
+            </p>
+        </div>
+        <div class="ndtitle">
+            @Model.news.NewsTitle
+        </div>
+        <div class="ndcontext">
+            @Model.news.NewsContent
+        </div>
+        <div class="ndimg">
+            <ul>
+                @foreach(var item in Model.newsDeatil)
+                {
+                    <li>
+                        @item.NewsImg
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="subtalk">       
+        <div>            
+            @using (Html.BeginForm("NewsDetail","Home",new {id=Model.news.NewsId },FormMethod.Post  ))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "")
+                <p>吐槽:<input type="text" name="context" class="tec"></p>               
+                <input type="submit" value="提交" class="sub" />              
+            }
+        </div>       
+    </div>
+    @Html.Partial("_NewsTalk",Model)
+</div>
+
+@section styles{
+        <link href="~/Content/News/css/NewsDetLayout.css" rel="stylesheet"/>
+    }
+

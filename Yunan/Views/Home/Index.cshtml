@@ -1,0 +1,115 @@
+﻿@model  Model.ViewModel.ScenicCollectionViewModel
+@{ 
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+ }
+
+<div class="bod-container">
+    <div class="bod-top">
+        <div class="top-left">
+            <ul class="top-left-ul" id="lunbo">
+                <li><img src="~/Images/1.jpg" /></li>
+                <li><img src="~/Images/2.jpg" /></li>
+                <li><img src="~/Images/3.jpg" /></li>
+                <li><img src="~/Images/4.jpg" /></li>
+            </ul>
+            <div class="pre"><</div>
+            <div class="next">></div>
+        </div>
+        <div class="bod-top-right">
+            <p class="rp1">@ViewBag.title</p>
+            <p class="rp2">&nbsp;&nbsp;@ViewBag.text</p>
+            <ul class="top-right-ul">
+                <li><img src="~/Images/12.jpg" /></li>
+                <li><img src="~/Images/14.jpg" /></li>
+                <li><img src="~/Images/8.jpg" /> </li>
+                <li><img src="~/Images/1.jpg" /> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bod-show">
+        <p class="show-p1">最热景区top5</p>       
+        <div class="show-lef" style="background-image:url(../../@Model.top1.ScenicCoverImg)">
+            <div class="table1-div2">
+                <p class="p2">￥@Model.top1.ScenicPrice</p>
+            </div>
+            <div class="table1-div3">              
+                @Html.ActionLink("HOT", "ScenicDetail",new {id=Model.top1.ScenicId } ,new { @class= "table1-div3-but1" })
+                <p class="table1-div3-p">@Model.top1.ScenicTitle</p>
+            </div>
+        </div>
+        <div class="show-right">                    
+           <ul class="show-ul">
+              @{      
+                  var i = 1;
+                  foreach (var item in Model.TopScenic)
+                  {
+                    <li>
+                        <div class="table2-div1" style="background-image:url(../../@item.ScenicCoverImg)">
+                            <div class="table2-div2">
+                                <p class="p1">￥@item.ScenicPrice</p>
+                            </div>
+                            <div class="table2-div3">                              
+                                @Html.ActionLink(@i.ToString(),"ScenicDetail","Home",new {id=@item.ScenicId },new { @class= "table2-div3-but1" })
+                                <p class="table2-div3-p">@item.ScenicTitle</p>
+                            </div>
+                        </div>
+                    </li> 
+                       i++; 
+                   }
+               }                   
+            </ul>                   
+        </div>        
+    </div>                                                              
+    <div class="bod-mian">
+        <ul class="nav-main-ul">
+            <li>
+                景区分类
+                <ul id="main-list"> @*设计不规范DRY，可扩展性不高*@
+                    <li data-type="自然风光">@Ajax.ActionLink("自然风光", "Index", new { value = "自然风光",flag=1 }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render", InsertionMode = InsertionMode.Replace })</li>
+                    <li data-type="古城">@Ajax.ActionLink("古城","Index",new { value = "古城", flag = 1 },new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render", InsertionMode = InsertionMode.Replace })</li>
+                    <li data-type="都市购物">@Ajax.ActionLink("都市购物", "Index", new { value = "都市购物", flag = 1 }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render", InsertionMode = InsertionMode.Replace })</li>
+                    <li data-type="民俗风情">@Ajax.ActionLink("民俗风情", "Index", new { value = "民俗风情", flag = 1 }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render", InsertionMode = InsertionMode.Replace })</li>                                    
+                </ul>
+            </li>      
+        </ul>
+        <div class="main-render" id="main-render">
+            @Html.Partial("_IndexType",Model)
+        </div>            
+    </div>
+    <div class="bod-bottom">
+        <ul class="nav-main-ul">
+            <li>
+                景区主题
+                <ul id="main-list2">
+                    <li>@Ajax.ActionLink("亲子", "Index", new { value = "亲子", flag = 0 }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render2", InsertionMode = InsertionMode.Replace })</li>
+                    <li>@Ajax.ActionLink("跟团", "Index", new { value = "跟团",flag = 0 }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render2", InsertionMode = InsertionMode.Replace })</li>
+                    <li>@Ajax.ActionLink("个人", "Index", new { value = "个人", flag = 0 }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render2", InsertionMode = InsertionMode.Replace })</li>
+                    <li>@Ajax.ActionLink("公司", "Index", new { value = "公司", flag = 0 }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render2", InsertionMode = InsertionMode.Replace })</li>
+                    <li>@Ajax.ActionLink("情侣", "Index", new { value = "情侣", flag = 0 }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "main-render2", InsertionMode = InsertionMode.Replace })</li>                   
+                </ul>
+            </li>
+        </ul>
+        <div class="main-render2" id="main-render2">
+            @Html.Partial("_IndexStyle", Model)
+        </div>                
+    </div>
+    <div class="side-bar">
+        <div class="sidechild1">
+            <p class="sidep1">节日提醒：</p>
+            <p class="sidep2">浓情端午，立夏和风</p>
+        </div>
+        <div class="sidechild2">
+            <p class="sidep1">活动：</p>
+            <p class="sidep2">端午特价家庭游享<span style="color:#ff6a00">九折</span></p>
+        </div>
+        <br />
+    </div>   
+</div>
+
+@section scripts{
+    <script src="~/Content/Index/js/showlist.js"></script>
+    <script src="~/Content/Index/js/Lunbo.js"></script>
+    }
+@section styles{
+    <link href="~/Content/Index/css/PartialStyle.css" rel="stylesheet" />
+}

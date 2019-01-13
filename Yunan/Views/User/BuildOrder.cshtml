@@ -1,0 +1,128 @@
+﻿@model Model.ViewModel.OrderDetailsViewModel
+@{
+    ViewBag.Title = "BuildOrder";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="bcontainer">
+    <div class="bhead">
+        <div class="bheadchild1">
+            <ul>
+                <li>
+                    <div class="bdiv1"></div>
+                    <div class="bdiv2">V</div>
+                </li>
+                <li>
+                    <div class="bdiv1"></div>
+                    <div class="bdiv2">2</div>
+                </li>
+                <li>
+                    <div class="bdiv1"></div>
+                    <div class="bdiv2">3</div>
+                </li>
+                <li>
+                    <div class="bdiv1"></div>
+                    <div class="bdiv2">4</div>
+                </li>
+                <li>
+                    <div class="bdiv1"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="bheadchild2">
+            <ul>
+                <li style="width:145px;"></li>
+                <li>选择线路</li>
+                <li>填写订单</li>
+                <li>在线支付</li>
+                <li>完成订单</li>
+            </ul>
+        </div>
+    </div>
+    @using (Html.BeginForm("BuildOrder", "User", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "")
+        <div class="bcontext">
+                <div class="bline1">
+                    <table>
+                        <tr>
+                            <td class="tdstyle">线路选择</td>
+                            <td class="tdstyle2"></td>
+                        </tr>
+                        <tr>
+                            <td>线路:</td>
+                            <td>
+                                <p class="bp1">@ViewBag.scenictitle</p>
+                                <input type="hidden" value="@ViewBag.scid" name="ScenicId" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>出发时间：</td>
+                            <td>
+                                @Html.TextBoxFor(o =>o.BeginTime, new { @clas = "", placeholder = "出发时间",Value=" " })
+                                @Html.ValidationMessageFor(o => o.BeginTime)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>人数：</td>
+                            <td>
+                                <div class="ncut">-</div>
+                                <input type="text" value="1" name="pnumber" id="pnumber" class="opnumber" />
+                                <div class="nadd">+</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>出行方式：</td>
+                            <td>
+                                @Html.DropDownListFor(o=>o.transport,ViewData["transport"] as SelectList, string.Empty)
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="bline2">
+                    <table>
+                        <tr>
+                            <td class="tdstyle">
+                                游客信息                             
+                            </td>
+                            <td class="tdstyle"> </td>
+                        </tr>
+                        <tr>
+                            <td style="width:70px;">游客：</td>
+                            <td>@ViewBag.uname</td>
+                        </tr>
+                        <tr>
+                            <td style="width:70px;">地址：</td>
+                            <td>
+                                @Html.TextBoxFor(o => o.Address)
+                                @Html.ValidationMessageFor(o => o.Address)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:70px;">联系电话:</td>
+                            <td>
+                                @Html.TextBoxFor(o => o.phone)
+                                @Html.ValidationMessageFor(o => o.phone)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bline3">
+                    <p class="bp2">总价：@ViewBag.price</p>
+                    <p><input type="submit" value="提交订单" class="bsubm"/></p>                  
+                </div>         
+        </div>
+    }
+</div>
+
+
+
+
+@section styles{
+<link href="~/Content/BuildOrder/css/BuildLayout.css" rel="stylesheet" />
+    }
+@section scripts{
+<script src="~/Content/BuildOrder/js/AddPnumber.js"></script>
+    }

@@ -1,0 +1,96 @@
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\Model.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\Model.pdb
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\obj\Debug\Model.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\obj\Debug\Model.pdb
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\EnvDTE.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\EnvDTE80.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\stdole.dll
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+c:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\Model.dll.config
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\MySql.Data.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\MySql.Data.xml
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\liuzhi\documents\visual studio 2015\Projects\Yunan\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\Model.dll.config
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\Yunan\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.dll
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.pdb
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\Model.dll.config
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\Model.dll
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\Model.pdb
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\MySql.Data.dll
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\MySql.Data.xml
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.dll
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.pdb
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.Migrations.InitialCreate.resources
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.Migrations.Initial.resources
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.Migrations.InitialCreate.resources
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.Migrations.Initial.resources
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.Migrations.Initial1.resources
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.Migrations.Initial1.resources
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.Migrations.Intitial2.resources
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.Migrations.Intitial2.resources
+C:\Users\Administrator\Desktop\Yunan\Model\obj\Debug\Model.Migrations.Initial3.resources
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.Migrations.Initial3.resources
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\liuzhi\Desktop\Yunan\Model\obj\Debug\Model.Migrations.initial4.resources
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\Model.dll.config
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\Model.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\Model.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\EntityFramework.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\MySql.Data.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\EntityFramework.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\MySql.Data.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.Migrations.InitialCreate.resources
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.Migrations.Initial.resources
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.Migrations.Initial1.resources
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.Migrations.Intitial2.resources
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.Migrations.Initial3.resources
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.Migrations.initial4.resources
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.csproj.GenerateResource.Cache
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.pdb
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\Webdiyer.MvcPager.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\Webdiyer.MvcPager.xml
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
+C:\Users\liuzhi\Desktop\毕业设计\Yunan\Model\obj\Debug\Model.Migrations.addvotelog.resources

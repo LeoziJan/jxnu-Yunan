@@ -1,0 +1,102 @@
+﻿@using Webdiyer.WebControls.Mvc
+@model Yunan.Models.ScenicSortViewModel
+@{
+    ViewBag.Title = "ScenicSort";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="sort-content">
+    <div class="sort-meun">
+        <input type="button" class="meun-but1" value="景区主题" id="meunbut1" />
+        <input type="button" class="meun-but2" value="景区类型" id="meunbut2" />
+    </div>
+    <div class="sort-display1" id="display1">
+        <ul class="display1-ul"> @*违反设计原则DRY*@
+            <li>@Html.ActionLink("个人", "ScenicSort", new { styles = "个人" }, new { @class = "dullink" })</li>
+            <li>@Html.ActionLink("跟团", "ScenicSort", new { styles = "跟团" }, new { @class = "dullink" })</li>
+            <li>@Html.ActionLink("家庭", "ScenicSort", new { styles = "家庭" }, new { @class = "dullink" })</li>
+            <li>@Html.ActionLink("公司", "ScenicSort", new { styles = "公司" }, new { @class = "dullink" })</li>
+            <li>@Html.ActionLink("情侣", "ScenicSort", new { styles = "情侣" }, new { @class = "dullink" })</li>
+            <li>@Html.ActionLink("亲子", "ScenicSort", new { styles = "亲子" }, new { @class = "dullink" })</li>
+        </ul>    
+        <div class="sort-list" id="sorts" >
+            @Html.Partial("_ScenicPage", Model.scenic)
+        </div>      
+    </div>
+    <div class="sort-display2" id="display2">
+        <ol>
+            <li>自然风光</li>
+            <li>古城</li>
+            <li>都市购物</li>
+            <li>民俗风情</li>
+        </ol>
+        <ul style="margin-left:50px;"> 
+            @*设计有问题 违背了DRY原则*@       
+            @foreach (var item in Model.naturalscenic)
+            {
+                <li>
+                    <div class="display2-ul1-img" style="background-image:url(../../@item.coverimg)"></div>
+                    <div class="display2-ul1-det">                                                                                            
+                        <p>@item.title</p>
+                        <p style="color:#ff6a00">@item.vote</p>
+                        <p style="color:#ff6a00">@item.price</p>
+                        <p style="width:75px;background-color:#ff6a00;margin-left:85px;">@Html.ActionLink("查看详细", "ScenicDetail", new { id = @item.id })</p>
+                    </div>
+                </li>
+            }
+        </ul>
+        <ul>
+            @foreach (var item in Model.memoryscenic)
+            {
+                <li>
+                    <div class="display2-ul2-img" style="background-image:url(../../@item.coverimg)"></div>
+                    <div class="display2-ul1-det">
+                        <p>@item.title</p>
+                        <p style="color:#ff6a00">@item.vote</p>
+                        <p style="color:#ff6a00">@item.price</p>
+                        <p style="width:75px;background-color:#ff6a00;margin-left:85px;">@Html.ActionLink("查看详细", "ScenicDetail", new { id = @item.id })</p>
+                    </div>
+                </li>
+            }
+        </ul>
+        <ul>
+            @foreach (var item in Model.cityscenic)
+            {
+                <li>
+                    <div class="display2-ul3-img">@item.price</div>
+                    <div class="display2-ul1-det">
+                        <p>@item.title</p>
+                        <p style="color:#ff6a00">@item.vote</p>
+                        <p style="color:#ff6a00">@item.price</p>
+                        <p style="width:75px;background-color:#ff6a00;margin-left:85px;">@Html.ActionLink("查看详细", "ScenicDetail", new { id = @item.id })</p>
+                    </div>
+                </li>
+            }
+        </ul>
+        <ul>
+            @foreach (var item in Model.customscenic)
+            {
+                <li>
+                    <div class="display2-ul4-img">@item.price</div>
+                    <div class="display2-ul1-det">
+                        <p>@item.title</p>
+                        <p style="color:#ff6a00">@item.vote</p>
+                        <p style="color:#ff6a00">@item.price</p>
+                        <p style="width:75px;background-color:#ff6a00;margin-left:85px;">@Html.ActionLink("查看详细", "ScenicDetail", new { id = @item.id })</p>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+
+@section styles{
+<link href="~/Content/ScenicSort/css/sortdesign.css" rel="stylesheet" />
+<link href="~/Content/ScenicSort/css/Pager.css" rel="stylesheet" />
+}
+@section scripts{
+<script src="~/Content/ScenicSort/js/Cover.js"></script>
+<script src="~/Content/ScenicSort/js/display.js"></script>
+@{Html.RegisterMvcPagerScriptResource();}
+    }

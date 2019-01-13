@@ -1,0 +1,57 @@
+﻿@model Model.ViewModel.ULoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/User/css/userLogin.css" rel="stylesheet" />
+</head>
+<body style="background-image:url(../../Images/Login/4.jpg);background-size:cover;">
+    <div class="Lcontain"> 
+        <div class="Lheader">
+        <p class="Lp">登录</p>
+        <p class="Lp">@Html.ActionLink("注册","Register","Home")</p>
+        <p class="Lp1">@Html.ActionLink("首页","Index")</p>         
+        </div><hr />
+        @using (Html.BeginForm("Login","Home",new {ReturnUrl= Request.QueryString["ReturnUrl"] }, FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true,"")
+            <div class="Lleftbar">
+                <div class="leftbarchild">
+                    <p>*昵称：
+                      @Html.TextBoxFor(u=>u.UserName,new {@class="Lbox",Value="乔木志" })
+                      @Html.ValidationMessageFor(u=>u.UserName)
+                    </p>
+                </div>
+                <div class="leftbarchild">
+                    <p>*密码：
+                      @Html.TextBoxFor(u=>u.UserPassward,new {@class= "Lbox", Value = "931798" })
+                      @Html.ValidationMessageFor(u=>u.UserPassward)
+                    </p>
+                </div>
+                <div class="Lcheck">
+                    <input type="submit" value="登录" class="Lsub" />
+                </div>
+            </div>
+        }       
+        <div class="Lrightbar">
+            <p>*登陆后你将获得以下特权</p>
+            <hr />
+            <ul>
+                <li>分享你的旅游攻略</li>
+                <li>没有帐号请先注册</li>
+                <li>下单功能</li>
+                <li>为所欲为</li>
+                <li>体验帐号：乔木志 密码：931798</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

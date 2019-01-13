@@ -1,0 +1,60 @@
+﻿@using Model;
+@{ 
+    var users = ViewData["User"] as Users;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/User/css/UserHome.css" rel="stylesheet" />  
+    @RenderSection("styles", required: false)
+    
+</head>
+<body style="padding-top:0px;">
+    <div class="Ucontainer">
+        <div class="uhead">
+            <div class="headchid1">
+                <p class="hp1">
+                    @Html.ActionLink("首页", "Index", "Home")
+                    @Html.ActionLink("攻略", "News", "Home")
+                    @Html.ActionLink("个人中心", "Index", "User")
+                </p>
+                <p class="hp2">
+                    <img src="~/Images/logol.png" style="width:100px;height:56px;" />
+                </p>
+            </div>
+            <div class="headchild2">
+                <p class="hp3">
+                    hello.@ViewBag.UserName
+                </p>
+                <p class="hp4">                   
+                    @ViewBag.UserName
+                   . @Html.ActionLink("修改信息","EditUserInfo")
+                   . @Html.ActionLink("注销","LoginOut","Home")
+                </p>
+            </div>
+        </div>
+        <div class="Uleftbar">          
+            <img src="@users.UserHeadimg" />
+            <p style="color:deepskyblue">@users.UserName</p>
+            <p>地址:@users.UserAddress</p>
+            <p>个性签名:</p>
+            <textarea readonly="readonly" class="htext" >@users.Usermotto</textarea>
+            <p>电话:@users.UserTel</p>
+            <p style="word-wrap:hyphenate;overflow:hidden;">生日:@users.Birthday</p>
+            <p style="margin-left:40px;margin-top:20px;">@Html.ActionLink("修改信息","EditUserInfo")</p>
+        </div>
+        <div class="Urightbar">
+            @RenderBody()
+        </div>               
+    </div>
+    <div class="Ufooter">
+        <p style="line-height:60px;">CopyRight@江西师范大学彩云之南旅游网.2018</p>       
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @RenderSection("scripts", required: false)    
+</body>
+</html>

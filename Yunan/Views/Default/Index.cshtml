@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Model.Users>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserPassward)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserTel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserHeadimg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usermotto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserPassward)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserTel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Birthday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserHeadimg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usermotto)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UserId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.UserId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UserId })
+        </td>
+    </tr>
+}
+
+</table>

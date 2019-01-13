@@ -1,0 +1,99 @@
+﻿@model Model.Scenic
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdminManagement.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Scenic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ScenicTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScenicTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScenicContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScenicContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScenicVote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScenicVote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScenicStyle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScenicStyle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScenicPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScenicPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Days)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Days)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScenicCoverImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScenicCoverImg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ScenicKeyWord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScenicKeyWord)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ScenicId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

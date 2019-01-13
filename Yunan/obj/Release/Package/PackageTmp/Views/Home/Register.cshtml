@@ -1,0 +1,90 @@
+﻿@model Yunan.Models.URegisterViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>   
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/User/css/UserRegister.css" rel="stylesheet" />
+    <title>Register</title>
+</head>
+<body style="background-image:url(../../Images/Login/4.jpg);background-size:cover;">
+    <div class="rcontain">
+        <div class="rheader">            
+            <p class="Lp">@Html.ActionLink("登录", "Login", "Home")</p>
+            <p class="Lp">注册</p>
+            <p class="Lp1">@Html.ActionLink("首页", "Index")</p> 
+        </div> <hr />
+        <div class="rleftbar">
+            @using (Html.BeginForm("Register", "Home", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "")               
+                    <div class="rleftchild">
+                        <p class="rp1">*昵称：</p>
+                        <p class="rp">
+                            @Html.TextBoxFor(r => r.UserName, new { @clas = "", placeholder = "Name" })
+                            @Html.ValidationMessageFor(r => r.UserName)
+                        </p>
+                    </div>
+                    <div class="rleftchild">
+                        <p class="rp1">*密码：</p>
+                        <p class="rp">
+                            @Html.TextBoxFor(r => r.UserPassward, new { @class = "txtBoxPassword special", placeholder = "PassWard" })
+                            @Html.ValidationMessageFor(r => r.UserPassward)
+                        </p>
+                    </div>
+                    <div class="rleftchild">
+                        <p class="rp1">*确认密码：</p>
+                        <p class="rp">
+                            @Html.TextBoxFor(r => r.ConfirmPassward, new { @clas = "", placeholder = "ConfirmPassward" })
+                            @Html.ValidationMessageFor(r => r.ConfirmPassward)
+                        </p>
+                    </div>
+                    <div class="rleftchild">
+                        <p class="rp1">*电话：</p>
+                        <p class="rp">
+                            @Html.TextBoxFor(r => r.UserTel, new { @clas = "", placeholder = "Phone" })
+                            @Html.ValidationMessageFor(r => r.UserTel)
+                        </p>
+                    </div>
+                    <div class="rleftchild">
+                        <p class="rp1">*身份证：</p>
+                        <p class="rp">
+                            @Html.TextBoxFor(r => r.IdCard, new { @clas = "", placeholder = "身份证" })
+                            @Html.ValidationMessageFor(r => r.IdCard)
+                        </p>
+                    </div>
+                    <div class="rleftchild">
+                        <p class="rp1">*地址：</p>
+                        <p class="rp">
+                            @Html.TextBoxFor(r => r.UserAddress, new { @clas = "", placeholder = "Address" })
+                            @Html.ValidationMessageFor(r => r.UserAddress)
+                        </p>
+                    </div>
+                    <div class="rleftchild">
+                        <p class="rp1">*生日：</p>
+                        <p class="rp">
+                            @Html.TextBoxFor(r => r.Birthday, new { @clas = "", placeholder = "Birthday" })
+                            @Html.ValidationMessageFor(r => r.Birthday)
+                        </p>
+                    </div>
+                    <div class="rconfirm">
+                        <input type="submit" value="注册" class="regsubmit" />
+                    </div>              
+            }           
+        </div>
+        <div class="rrightbar">
+            <p>*注意事项</p>
+            <hr />
+            <ul>
+                <li>*号为必填项</li>
+                <li>生日的格式为1990/1/1</li>              
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

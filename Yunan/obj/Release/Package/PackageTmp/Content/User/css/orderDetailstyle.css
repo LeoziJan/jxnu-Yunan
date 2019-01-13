@@ -1,0 +1,108 @@
+﻿
+.dehead{
+    width:950px;
+    height:35px;
+    margin-top:10px;
+    margin-left:20px;   
+    background-color:#f8f8f8; 
+    border-radius:2px;
+    border:1px groove white;
+}
+
+.dehead p{
+    float:left;
+    position:relative;
+}
+
+.dep1{
+    margin-left:50px;
+}
+
+.dep2{
+    margin-left:550px;
+}
+
+.demain{
+    width:950px;
+    height:auto;
+    min-height:500px;
+    margin-top:10px;
+    margin-left:20px;   
+    
+
+}
+
+.demain div{
+    float:left;
+    position:relative;
+}
+
+.demain ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+
+.demain ul li{
+    width:940px;
+    height:auto;
+    min-height:490px;
+    margin-top:20px;
+    list-style:none;
+}
+
+
+.dcontext{
+    width:938px;
+    height:auto;
+    min-height:450px;
+    background-color:#f8f8f8; 
+    border-radius:2px;
+    border:1px groove white;
+}
+
+.dcontext div{
+    float:left;
+    position:relative;
+}
+
+.dmainleft{
+    width:450px;
+    height:400px;
+    
+}
+
+.dmainleft img{
+    width:450px;
+    height:280px;
+    background-size:contain;
+}
+
+.dmainleft p{
+    margin:0px;
+    padding:0px;
+    width:440px;
+    margin-top:10px;
+    height:25px;
+    line-height:25px;
+    float:left;
+    position:relative;
+    margin-left:20px;
+}
+
+.dmainright{
+    width:450px;
+    height:400px;
+    margin-left:20px;
+}
+
+.dmainright p{
+    margin:0px;
+    padding:0px;
+    width:420px;
+    height:35px;
+    margin-top:5px;
+    line-height:35px;
+    float:left;
+    position:relative;
+}

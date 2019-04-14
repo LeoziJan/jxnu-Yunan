@@ -153,6 +153,13 @@
     font-size:20px;
     text-align:center;
 }
+.nadd:hover {
+	cursor:pointer;
+}
+
+.ncut:hover {
+	cursor: pointer;
+}
 
 .opnumber{
     float:left;
@@ -187,11 +194,11 @@
 }
 
 .bp2{
-    width:150px;
-    margin-left:300px;
+    width:60px;
+    margin-left:30%;
     font-size:18px;
-    color:#ff0000;
-    margin-top:5px;
+    color:#ff0000;    
+	float:left;
 }
 
 .bsubm{

@@ -1,46 +1,48 @@
-﻿$(function () {
-    play();
-})
+﻿var timer;
 var imgs_div = $(".top-left");
 var imgsul = document.getElementById("lunbo");
-var previous = $(".pre");
-var next = $(".next");
+var offset = parseInt(imgsul.offsetLeft);
 
-next.click = function () {
-    var offset = parseInt(imgsul.offsetLeft) - 400;
-    if (offset < -1200) {       
-        offset = 0;
-    }
-    var left = offset + "px";
-    $("#lunbo").animate({ left: left });
-}
+$(function () {
+	play();
+});
 
-var timer;
+//轮播每两秒一次
 function play() {
-    timer = setInterval(function () {
-        next.click();
-    }, 2000)
+	timer = setInterval(function () {
+		offset = parseInt(imgsul.offsetLeft) - 400;
+		if (offset < -1200) {
+			offset = 0;
+		}
+		var left = offset + "px";
+		$("#lunbo").animate({ left: left });
+	}, 2000);
 }
 
-//previous.click = function () {
-//    var offset = parseInt(imgsul.offsetLeft) + 400;
-//    imgsul.style.left = offset + "px";
-//    if (index < 1) {
-//        index = 4;
-//    }
-//    index -= 1;
-//    animate(400);
-//}
+//前一张
+$(".pre").click(function () {	
+	clearInterval(timer);
+	offset = parseInt(imgsul.offsetLeft) + 400;	
+	if (offset > 0)
+	{
+		offset = -1200;
+	}	
+	var left = offset + "px";
+	$("#lunbo").animate({ left: left });
+	setTimeout(play(), 1000);
+});
 
-//next.click = function () {   
-//    var offset = parseInt(imgsul.offsetLeft) - 400;
-//    imgsul.style.left = offset + "px";
-//    if (index > 4) {
-//        index = 1;
-//    }
-//    index += 1;
-//    animate(-400);
-//}
+//后一张
+$(".next").click(function () {	
+	clearInterval(timer);
+	offset = parseInt(imgsul.offsetLeft) - 400;		
+	if (offset < -1200) {
+		offset = 0;
+	}
+	var left = offset + "px";
+	$("#lunbo").animate({ left: left });
+	setTimeout( play(),1000);
+});
 
 
 

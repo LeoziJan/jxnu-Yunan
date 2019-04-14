@@ -64,38 +64,41 @@
                 </div>
             </div>
         </div>
-        <div class="rightbar">
-            <ul>
-                @foreach (var item in Model.News)
-                {
-                    <li>                       
-                        <div>                                                       
-                            <div class="ndiv4">
-                                <img src="@item.UserHeadimg" style="width:50px; height:50px;" />
-                            </div>
-                            <div class="ndiv5">
-                                <p class="np9">@item.UserName</p>
+		<div class="rightbar">
+			<div id="dlgAlert" style="display:none">
+				<p>----别闹!加载是件正经事。---</p>
+			</div>
+			<ul>
+				@foreach (var item in Model.News)
+				{
+					<li>
+						<div>
+							<div class="ndiv4">
+								<img src="@item.UserHeadimg" style="width:50px; height:50px;" />
+							</div>
+							<div class="ndiv5">
+								<p class="np9">@item.UserName</p>
 								<p class="np10">
 									@*@Ajax.ActionLink("点赞", "News", new { id = @item.NewsId }, new AjaxOptions() { HttpMethod = "Post", UpdateTargetId = "voteshow", InsertionMode = InsertionMode.Replace })*@
-									<input type="submit" id="voteing"class="rvote" value="点赞" data-newsid="@item.NewsId" data-newvotes="@item.NewsVote">
+									<input type="submit" id="voteing" class="rvote" value="点赞" data-newsid="@item.NewsId" data-newvotes="@item.NewsVote">
 									<input type="text" class="showvote" value="@item.NewsVote">
 								</p>
-                                <p class="np10">@item.PostTime </p>                                                              
-                            </div>                           
-                            <div class="ndiv6"> 
-                                <p class="np11">@item.NewsTitle</p>
-                                <p class="np12">@item.NewsContent</p>
-                                <img src="@item.NewsCoverImg" class="nimg5" style="margin-left:15px;"/>
-                            </div> 
-                            <div class="ndiv7">
-                                <p class="np13">@Html.ActionLink("查看详细","NewsDetail",new {id=@item.NewsId})</p>
-                                <div class="np13" id="voteshow"> @*@Html.Partial("_vote", item)*@</div>                                                            
-                            </div>                                                                                                                                            
-                        </div>
-                    </li>
-                }               
-            </ul>
-        </div>
+								<p class="np10">@item.PostTime </p>
+							</div>
+							<div class="ndiv6">
+								<p class="np11">@item.NewsTitle</p>
+								<p class="np12">@item.NewsContent</p>
+								<img src="@item.NewsCoverImg" class="nimg5" style="margin-left:15px;" />
+							</div>
+							<div class="ndiv7">
+								<p class="np13">@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.NewsId })</p>
+								<div class="np13" id="voteshow"> @*@Html.Partial("_vote", item)*@</div>
+							</div>
+						</div>
+					</li>
+				}
+			</ul>
+		</div>
     </div>
 </div>
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
@@ -129,6 +132,24 @@
 					alert('请求有误');
 				}
 			});
+		});
+	});
+	$(".headbefore-sub").click(function () {
+		$(".rightbar").empty();			
+		var keyWords = $(".headbefor-textbox").val();
+		$.ajax({
+			type: "GET",
+			url: "/User/QueryNewsInfo",			
+			data: { keyWords: keyWords },
+			async: true,
+			success: function (ret) {	
+				$(".dlgAlert").show();
+				$(".rightbar").html(ret);
+			},
+			error: function () {
+				alert('请求有误');
+				$(".rightbar").html("请求失败");
+			}
 		});
 	});
 </script>

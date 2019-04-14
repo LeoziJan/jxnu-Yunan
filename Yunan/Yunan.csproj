@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -266,6 +267,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\BuildOrder\css\BuildLayout.css" />
     <Content Include="Content\BuildOrder\js\AddPnumber.js" />
+    <Content Include="Content\calendar-blue.css" />
     <Content Include="Content\Index\css\PartialStyle.css" />
     <Content Include="Content\Index\js\Lunbo.js" />
     <Content Include="Content\Index\js\showlist.js" />
@@ -333,6 +335,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\calendar.js" />
     <Content Include="Scripts\dropify.min.js" />
     <Content Include="ueditor\dialogs\anchor\anchor.html" />
     <Content Include="ueditor\dialogs\attachment\attachment.css" />
@@ -1477,6 +1480,7 @@
     <Content Include="Views\UserManagent\Edit.cshtml" />
     <Content Include="Views\UserManagent\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdminManagement.cshtml" />
+    <Content Include="Views\User\QueryNewsInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\ScenicDetail\js\" />

@@ -124,12 +124,14 @@ namespace Yunan.Controllers
         {
             NewsCollectionViewModel ncvm = new NewsCollectionViewModel();           
             var topnews =_newsManage.FindTopVoteService();
+            //获取热门攻略
             List<HotNewsViewModel> hnvm = Mapper.Map<List<HotNewsViewModel>>(topnews);  
             foreach(var item in hnvm)
             {
                 Users user = _userManage.LoadService(u => u.UserId == item.UserId).FirstOrDefault();
                 item.UserName = user.UserName;                
-            }                              
+            }   
+            //获取系统推荐攻略
             List<AdminNewsViewModel> anvm = Mapper.Map<List<AdminNewsViewModel>>(_newsManage.GetNewsByUserService("NewsAdmin"));
             foreach(var item in anvm)
             {
@@ -137,6 +139,7 @@ namespace Yunan.Controllers
                 item.UserName = user.UserName;
                 item.UserHeadimg = user.UserHeadimg;
             }
+            //获取最新攻略列表
             List<NewsViewModel> nvm = Mapper.Map<List<NewsViewModel>>(_newsManage.GetNewsByTime());  
             foreach(var item in nvm)
             {

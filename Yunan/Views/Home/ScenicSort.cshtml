@@ -24,13 +24,13 @@
         </div>      
     </div>
     <div class="sort-display2" id="display2">
-        <ol>
+        <ol id="dis2ol">
             <li>自然风光</li>
             <li>古城</li>
             <li>都市购物</li>
             <li>民俗风情</li>
         </ol>
-        <ul style="margin-left:55px;"> 
+        <ul style="margin-left:55px;" id="naul"> 
             @*设计有问题 违背了DRY原则*@       
             @foreach (var item in Model.naturalscenic)
             {
@@ -45,7 +45,7 @@
                 </li>
             }
         </ul>
-        <ul>
+        <ul id="meul">
             @foreach (var item in Model.memoryscenic)
             {
                 <li>
@@ -59,7 +59,7 @@
                 </li>
             }
         </ul>
-        <ul>
+        <ul id="cul">
             @foreach (var item in Model.customscenic)
             {
                 <li>
@@ -73,7 +73,7 @@
                 </li>
             }
         </ul>
-        <ul>
+        <ul id="ciul">
             @foreach (var item in Model.cityscenic)
             {
                 <li>

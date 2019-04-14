@@ -86,6 +86,7 @@
     <Compile Include="IScenicDal.cs" />
     <Compile Include="IScenicDetailDal.cs" />
     <Compile Include="ITalksDal.cs" />
+    <Compile Include="IUserQueryDal.cs" />
     <Compile Include="IUsersDal.cs" />
     <Compile Include="IVotelogDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

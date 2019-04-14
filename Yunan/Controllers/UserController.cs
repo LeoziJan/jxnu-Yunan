@@ -20,14 +20,16 @@ namespace Yunan.Controllers
         private IScenicManage _scenicmanage;
         private IOrderDetailManage _orderdetailmanage;
         private IOrdersManage _ordermanage;
+        private IUserQueryManange _userQueryManage;
         //***依赖注入
-        public UserController(INewsManage newsmanage,IUsersManage usermanage,IScenicManage scenicmanage,IOrderDetailManage orderdetailmanage,IOrdersManage ordermanage)
+        public UserController(INewsManage newsmanage,IUsersManage usermanage,IScenicManage scenicmanage,IOrderDetailManage orderdetailmanage,IOrdersManage ordermanage,IUserQueryManange userQueryManange)
         {
             _newsmanage = newsmanage;
             _usermanage = usermanage;
             _scenicmanage = scenicmanage;
             _orderdetailmanage = orderdetailmanage;
             _ordermanage = ordermanage;
+            _userQueryManage = userQueryManange;
         }      
         // GET: User
         public ActionResult Index()
@@ -288,6 +290,29 @@ namespace Yunan.Controllers
             uodvm.order = order;
             uodvm.odetail = ovm;
             ViewData.Model = uodvm;
+            return View();
+        }
+
+        /// <summary>
+        /// 按关键字查景区
+        /// </summary>
+        /// <param name="keyWords"></param>
+        /// <returns></returns>
+        public ActionResult QueryScenicInfo(string keyWords)
+        {
+            var scenic = _userQueryManage.QueryScenicByKeyWords(keyWords);
+            ViewData.Model = scenic;
+            return View();
+        }
+        /// <summary>
+        /// 按关键字查攻略
+        /// </summary>
+        /// <param name="keyWords"></param>
+        /// <returns></returns>
+        public ActionResult QueryNewsInfo(string keyWords)
+        {
+            var news = _userQueryManage.QueryNewsByKeyWords(keyWords);
+            ViewData.Model = news;
             return View();
         }
     }

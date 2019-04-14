@@ -78,6 +78,7 @@
     <Compile Include="IUsersManage.cs" />
     <Compile Include="IVoteLogManage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IUserQueryManange.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Idal\IDAL.csproj">

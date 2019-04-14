@@ -76,6 +76,7 @@
     <Compile Include="ScenicDal.cs" />
     <Compile Include="ScenicDetailDal.cs" />
     <Compile Include="TalksDal.cs" />
+    <Compile Include="UserQueryDal.cs" />
     <Compile Include="UsersDal.cs" />
     <Compile Include="VoteLogDal.cs" />
   </ItemGroup>

@@ -115,6 +115,7 @@
     <Compile Include="ScenicDetailManage.cs" />
     <Compile Include="ScenicManage.cs" />
     <Compile Include="TalksManage.cs" />
+    <Compile Include="UserQueryManage.cs" />
     <Compile Include="UsersManage.cs" />
     <Compile Include="VoteLogManage.cs" />
   </ItemGroup>

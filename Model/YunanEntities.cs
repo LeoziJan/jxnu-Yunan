@@ -31,6 +31,7 @@ namespace Model
         public virtual DbSet<AdminScenic> Admin_Scenic { get; set; }
         public virtual DbSet<NewsDetalis> NewsDetalis { get; set; }
         public virtual DbSet<VoteLog> VoteLog { get; set; }
+        public virtual DbSet<NewsCollect> NewsCollect { get; set; }
 
         //级联删除定义
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

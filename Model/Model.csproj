@@ -102,6 +102,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="News.cs" />
+    <Compile Include="NewsCollect.cs" />
     <Compile Include="NewsDetalis.cs" />
     <Compile Include="OrderDetailMetadata.cs" />
     <Compile Include="OrderDetails.cs" />

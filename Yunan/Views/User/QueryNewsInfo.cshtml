@@ -30,7 +30,7 @@
 					</div>
 					<div class="ndiv7">
 						<p class="np13">@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.NewsId })</p>
-						<div class="np13" id="voteshow"> @*@Html.Partial("_vote", item)*@</div>
+						<input type="button" class="collcet" style="border:none;margin-left:100px;width:150px;" value="收藏" data-newsid="@item.NewsId" />
 					</div>
 				</div>
 			</li>

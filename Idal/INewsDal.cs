@@ -14,5 +14,6 @@ namespace Idal
 
         //查询点赞数最多的攻略
         IQueryable<News> FindTopVote();
+        bool AddNewsCollect(NewsCollect newsColl);
     }
 }

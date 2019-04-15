@@ -15,5 +15,6 @@ namespace IBLL
         //查询点赞数最多的攻略
         IQueryable<News> FindTopVoteService();
         IQueryable<NewsDetalis> GetNewsDetailByNews(int id);
+        bool AddNewsCollect(int? newsId, int userNo);
     }
 }

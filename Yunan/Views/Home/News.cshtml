@@ -89,7 +89,7 @@
 							</div>
 							<div class="ndiv7">
 								<p class="np13">@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.NewsId })</p>
-								<div class="np13" id="voteshow"> @*@Html.Partial("_vote", item)*@</div>
+								<input type="button"class="collcet"  style="border:none;margin-left:100px;width:150px;" value="收藏" data-newsid="@item.NewsId"/>
 							</div>
 						</div>
 					</li>
@@ -153,6 +153,31 @@
 			}
 		});
 	});
+	$(".collcet").each(function () {
+		$(this).click(function () {
+			var newsId = $(this).data("newsid");
+			var data = $(this).next();
+			$.ajax({
+				type: "POST",
+				url: "/Home/Collection",
+				dataType: "text",
+				data: { newsId: newsId },
+				async: true,
+				success: function (ret) {
+					if (ret) {
+						alert('收藏成功');
+					}
+					else  {
+						alert('请求失败：请先登录或检查是否已收藏');
+					}
+					
+				},
+				error: function () {
+					alert('请求有误');
+				}
+			});
+		})
+	})
 </script>
 
 	

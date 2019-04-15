@@ -14,6 +14,7 @@ using Common;
 
 namespace Yunan.Controllers
 {
+    //[RoutePrefix("Home")]
     public class HomeController : BaseController
     {
        
@@ -24,7 +25,7 @@ namespace Yunan.Controllers
         private ITalksManage _talksManage;
         private IVoteLogManage _votelogManage;
         private DbContext _db=new YunanEntities();       
-        //****依赖注入*****
+        //****依赖注入*****       
         public HomeController(IScenicManage scenicManage,IScenicDetailManage scenicDetailManae,INewsManage newsManage,IUsersManage usersManage,ITalksManage talksManage,IVoteLogManage votelogManage)
         {
             _scenicDetailManage = scenicDetailManae;
@@ -346,5 +347,18 @@ namespace Yunan.Controllers
             }            
             return View("Register");
         }            
+
+        [HttpPost]
+        [Route("Collection")]        
+        public bool CollectNews(int? newsId)
+        {
+            var name = System.Web.HttpContext.Current.Session["UserName"]?.ToString();
+            var user = userManage.LoadService(u => u.UserName == name).FirstOrDefault();
+            if (user != null)
+            {
+                return _newsManage.AddNewsCollect(newsId,user.UserId);
+            }
+            else return false;
+        }
     }
 }

@@ -13,6 +13,22 @@ namespace bll
     {
         private NewsDal nd = new NewsDal();
         private NewsDetailDal ndd = new NewsDetailDal();
+
+        public bool AddNewsCollect(int? newsId, int userId)
+        {
+            if (newsId <= 0)
+            {
+                return false;
+            }
+            NewsCollect newscoll = new NewsCollect()
+            {
+                NewsId = newsId.Value,
+                UserId = userId,
+                CreateTime = DateTime.Now
+            };
+            return nd.AddNewsCollect(newscoll);
+        }
+
         /// <summary>
         /// 查询点赞数最高的攻略
         /// </summary>

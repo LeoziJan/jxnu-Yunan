@@ -9,7 +9,6 @@ using Common;
 using Model.ViewModel;
 using IBLL;
 using AutoMapper;
-using static Yunan.Attributes.IsLoginAttributes;
 
 namespace Yunan.Controllers
 {

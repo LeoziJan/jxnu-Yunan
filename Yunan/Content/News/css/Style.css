@@ -218,13 +218,19 @@
     background-color:#4cff00;
 }
 
-.np13{
-    width:350px;
-    height:40px;
-    line-height:40px;
-    float:left;
-    position:relative;
-    text-align:center;
+.collect {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	position: relative;
+	text-align: center;
+	margin-left:200px;
+
+}
+.collcet:hover {
+	color:white;
+	margin-top:5px;
 }
 
 .np7-1{

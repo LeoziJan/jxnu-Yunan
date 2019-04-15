@@ -12,6 +12,13 @@ namespace Dal
     public class NewsDal : CommonDal<News>, INewsDal
     {
         private DbContext db = DbEntity.Setdb();
+        private YunanEntities ye = new YunanEntities();
+        public bool AddNewsCollect(NewsCollect newcColl)
+        {           
+            ye.NewsCollect.Add(newcColl);
+            return ye.SaveChanges() > 0;
+        }
+
         public IQueryable<News> FindTopVote()
         {
             var news = (from n in db.Set<News>()

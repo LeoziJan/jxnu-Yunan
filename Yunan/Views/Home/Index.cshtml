@@ -1,7 +1,7 @@
 ﻿@model  Model.ViewModel.ScenicCollectionViewModel
-@{ 
-    Layout = "~/Views/Shared/_LayoutHome.cshtml";
- }
+@{
+	Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
 
 <div class="bod-container">
 	<div class="bod-top">
@@ -107,11 +107,20 @@
 		<br />
 	</div>
 </div>
-
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
 @section scripts{
-    <script src="~/Content/Index/js/showlist.js"></script>
-    <script src="~/Content/Index/js/Lunbo.js"></script>
-    }
-@section styles{
-    <link href="~/Content/Index/css/PartialStyle.css" rel="stylesheet" />
+	<script src="~/Content/Index/js/showlist.js"></script>
+	<script src="~/Content/Index/js/Lunbo.js"></script>
 }
+@section styles{
+	<link href="~/Content/Index/css/PartialStyle.css" rel="stylesheet" />
+}
+<script type="text/javascript">
+	$(".headbefore-sub").click(function () {
+		var key = $(".headbefor-textbox").val();		
+		openWindow("/User/QueryScenicInfo?keyWords="+key, "搜索结果");		
+	})
+	function openWindow(url, title) {
+		window.open(url, title, 'width=1000px, height=900px,status=yes,toolbar=no,scrollbars=yes,location=no,directories=no,resizable=yes');
+	}
+</script>

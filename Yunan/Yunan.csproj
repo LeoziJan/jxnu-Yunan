@@ -1481,6 +1481,7 @@
     <Content Include="Views\UserManagent\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdminManagement.cshtml" />
     <Content Include="Views\User\QueryNewsInfo.cshtml" />
+    <Content Include="Views\User\QueryScenicInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\ScenicDetail\js\" />

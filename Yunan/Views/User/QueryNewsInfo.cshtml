@@ -1,23 +1,25 @@
 ﻿@model Model.News
+@using Model;
+
 @{
 	Layout = null;
+	var news = ViewBag.News as List<News>;
 }
 
 <div class="partialView">
 	<ul>
-		@foreach (var item in Model.News)
+		@foreach (var item in news)
 		{
 			<li>
 				<div>
 					<div class="ndiv4">
-						<img src="@item.UserHeadimg" style="width:50px; height:50px;" />
+						<img src="@item.User.UserHeadimg" style="width:50px; height:50px;" />
 					</div>
 					<div class="ndiv5">
-						<p class="np9">@item.UserName</p>
-						<p class="np10">
-							@*@Ajax.ActionLink("点赞", "News", new { id = @item.NewsId }, new AjaxOptions() { HttpMethod = "Post", UpdateTargetId = "voteshow", InsertionMode = InsertionMode.Replace })*@
+						<p class="np9">@item.User.UserName</p>
+						<p class="np10">							
 							<input type="submit" id="voteing" class="rvote" value="点赞" data-newsid="@item.NewsId" data-newvotes="@item.NewsVote">
-							<input type="text" class="showvote" value="@item.NewsVote">
+							<input type="text" class="showvote" readonly="readonly" value="@item.NewsVote">
 						</p>
 						<p class="np10">@item.PostTime </p>
 					</div>

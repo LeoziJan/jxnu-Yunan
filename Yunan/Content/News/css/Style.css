@@ -159,7 +159,7 @@
    margin:0px;
    margin-top:10px;
    float:left;
-   width:600px;
+   width:595px;
 }
 
 .ndiv5{
@@ -237,7 +237,7 @@
 
 .rvote {
 	float:left;
-	border:none;
+	border:1px solid #378ffc;
 	background-color:white;
 	
 }

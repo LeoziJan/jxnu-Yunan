@@ -9,6 +9,7 @@ using Common;
 using Model.ViewModel;
 using IBLL;
 using AutoMapper;
+using static Yunan.Attributes.IsLoginAttributes;
 
 namespace Yunan.Controllers
 {
@@ -292,16 +293,22 @@ namespace Yunan.Controllers
             ViewData.Model = uodvm;
             return View();
         }
-
         /// <summary>
         /// 按关键字查景区
         /// </summary>
         /// <param name="keyWords"></param>
         /// <returns></returns>
+        [HttpGet]
+        [AllowAnonymous]
         public ActionResult QueryScenicInfo(string keyWords)
         {
+            var name = System.Web.HttpContext.Current.Session["UserName"]?.ToString();
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return RedirectToAction("Login", "Home");
+            }
             var scenic = _userQueryManage.QueryScenicByKeyWords(keyWords);
-            ViewData.Model = scenic;
+            ViewBag.Scenic = scenic.ToList();
             return View();
         }
         /// <summary>
@@ -309,10 +316,17 @@ namespace Yunan.Controllers
         /// </summary>
         /// <param name="keyWords"></param>
         /// <returns></returns>
+        [HttpGet]   
+        [AllowAnonymous]
         public ActionResult QueryNewsInfo(string keyWords)
         {
+            var name = System.Web.HttpContext.Current.Session["UserName"]?.ToString();
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return RedirectToAction("Login", "Home");
+            }
             var news = _userQueryManage.QueryNewsByKeyWords(keyWords);
-            ViewData.Model = news;
+            ViewBag.News = news.ToList();
             return View();
         }
     }

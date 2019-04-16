@@ -112,15 +112,9 @@ D:\Respos\Yunan\jxnu-Yunan\Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.res
 D:\Respos\Yunan\jxnu-Yunan\Model\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
 D:\Respos\Yunan\jxnu-Yunan\Model\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll
 D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.csprojAssemblyReference.cache
-D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.Migrations.InitialCreate.resources
-D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.Migrations.Initial.resources
-D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.Migrations.Initial1.resources
-D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.Migrations.Intitial2.resources
-D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.Migrations.Initial3.resources
-D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.Migrations.initial4.resources
-D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.Migrations.addvotelog.resources
-D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.csproj.GenerateResource.cache
 D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.csproj.CopyComplete
 D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.dll
 D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.pdb
+D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.Migrations.fixsql.resources
+D:\Respos\Yunan\jxnu-Yunan\Model\obj\Debug\Model.csproj.GenerateResource.cache

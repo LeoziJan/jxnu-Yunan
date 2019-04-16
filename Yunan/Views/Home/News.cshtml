@@ -88,8 +88,10 @@
 								<img src="@item.NewsCoverImg" class="nimg5" style="margin-left:15px;" />
 							</div>
 							<div class="ndiv7">
-								<p class="np13">@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.NewsId })</p>
-								<input type="button"class="collcet"  style="border:none;margin-left:100px;width:150px;" value="收藏" data-newsid="@item.NewsId"/>
+								<p class="np13">
+									@Html.ActionLink("查看详细", "NewsDetail", new { id = @item.NewsId })
+								</p>
+								<input type="button" class="collect"  value="收藏" data-newsid="@item.NewsId" />
 							</div>
 						</div>
 					</li>
@@ -153,24 +155,21 @@
 			}
 		});
 	});
-	$(".collcet").each(function () {
+	$(".collect").each(function () {
 		$(this).click(function () {
-			var newsId = $(this).data("newsid");
-			var data = $(this).next();
+			var newsId = $(this).data("newsid");			
 			$.ajax({
-				type: "POST",
-				url: "/Home/Collection",
-				dataType: "text",
-				data: { newsId: newsId },
+				type: "GET",
+				url: "/Home/CollectNews?newsId="+newsId,
+				dataType: "text",				
 				async: true,
 				success: function (ret) {
-					if (ret) {
+					if (ret==true) {
 						alert('收藏成功');
 					}
 					else  {
 						alert('请求失败：请先登录或检查是否已收藏');
-					}
-					
+					}					
 				},
 				error: function () {
 					alert('请求有误');

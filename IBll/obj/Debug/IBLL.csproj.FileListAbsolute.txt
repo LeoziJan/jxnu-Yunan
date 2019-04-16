@@ -122,15 +122,6 @@ D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\StructureMap.xml
 D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\System.ValueTuple.xml
 D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\EntityFramework.xml
 D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\Webdiyer.MvcPager.xml
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\de\Microsoft.Data.Entity.Design.Extensibility.resources.dll
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\es\Microsoft.Data.Entity.Design.Extensibility.resources.dll
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\fr\Microsoft.Data.Entity.Design.Extensibility.resources.dll
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\it\Microsoft.Data.Entity.Design.Extensibility.resources.dll
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\ja\Microsoft.Data.Entity.Design.Extensibility.resources.dll
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\ko\Microsoft.Data.Entity.Design.Extensibility.resources.dll
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\ru\Microsoft.Data.Entity.Design.Extensibility.resources.dll
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\zh-Hans\Microsoft.Data.Entity.Design.Extensibility.resources.dll
-D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\zh-Hant\Microsoft.Data.Entity.Design.Extensibility.resources.dll
 D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\zh-CHS\Webdiyer.MvcPager.resources.dll
 D:\Respos\Yunan\jxnu-Yunan\IBll\bin\Debug\zh-CHT\Webdiyer.MvcPager.resources.dll

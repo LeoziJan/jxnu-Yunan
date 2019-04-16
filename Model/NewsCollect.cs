@@ -16,11 +16,9 @@ namespace Model
     {
         [Key]
         public int Id { get; set; }
-
-        [ForeignKey("News")]
+      
         public int NewsId { get; set; }
-
-        [ForeignKey("User")]
+       
         public int UserId { get; set; }
 
         /// <summary>
@@ -28,9 +26,9 @@ namespace Model
         /// </summary>            
         public DateTime CreateTime { get; set; }           
 
-        //导航属性
-        public virtual Users User { get; set; }
-        public virtual News News { get; set; }           
+        ////导航属性
+        //public virtual Users User { get; set; }
+        //public virtual News News { get; set; }           
     }
     
 }

@@ -72,33 +72,9 @@
   <ItemGroup>
     <Compile Include="AdminScenic.cs" />
     <Compile Include="Admins.cs" />
-    <Compile Include="Migrations\201805080020533_InitialCreate.cs" />
-    <Compile Include="Migrations\201805080020533_InitialCreate.Designer.cs">
-      <DependentUpon>201805080020533_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201805300730107_Initial.cs" />
-    <Compile Include="Migrations\201805300730107_Initial.Designer.cs">
-      <DependentUpon>201805300730107_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806041223227_Initial1.cs" />
-    <Compile Include="Migrations\201806041223227_Initial1.Designer.cs">
-      <DependentUpon>201806041223227_Initial1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806051329287_Intitial2.cs" />
-    <Compile Include="Migrations\201806051329287_Intitial2.Designer.cs">
-      <DependentUpon>201806051329287_Intitial2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806080928323_Initial3.cs" />
-    <Compile Include="Migrations\201806080928323_Initial3.Designer.cs">
-      <DependentUpon>201806080928323_Initial3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806281502222_initial4.cs" />
-    <Compile Include="Migrations\201806281502222_initial4.Designer.cs">
-      <DependentUpon>201806281502222_initial4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810281052059_addvotelog.cs" />
-    <Compile Include="Migrations\201810281052059_addvotelog.Designer.cs">
-      <DependentUpon>201810281052059_addvotelog.cs</DependentUpon>
+    <Compile Include="Migrations\201904161527168_fixsql.cs" />
+    <Compile Include="Migrations\201904161527168_fixsql.Designer.cs">
+      <DependentUpon>201904161527168_fixsql.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="News.cs" />
@@ -134,26 +110,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805080020533_InitialCreate.resx">
-      <DependentUpon>201805080020533_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201805300730107_Initial.resx">
-      <DependentUpon>201805300730107_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806041223227_Initial1.resx">
-      <DependentUpon>201806041223227_Initial1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806051329287_Intitial2.resx">
-      <DependentUpon>201806051329287_Intitial2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806080928323_Initial3.resx">
-      <DependentUpon>201806080928323_Initial3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806281502222_initial4.resx">
-      <DependentUpon>201806281502222_initial4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810281052059_addvotelog.resx">
-      <DependentUpon>201810281052059_addvotelog.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904161527168_fixsql.resx">
+      <DependentUpon>201904161527168_fixsql.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

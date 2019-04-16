@@ -348,8 +348,8 @@ namespace Yunan.Controllers
             return View("Register");
         }            
 
-        [HttpPost]
-        [Route("Collection")]        
+        [HttpGet]
+        //[Route("Collection")]        
         public bool CollectNews(int? newsId)
         {
             var name = System.Web.HttpContext.Current.Session["UserName"]?.ToString();

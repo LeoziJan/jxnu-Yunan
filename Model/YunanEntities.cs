@@ -53,8 +53,8 @@ namespace Model
 
     }
 
-    //数据库种子的初始化
-    public class SeedingDataInitializer :DropCreateDatabaseIfModelChanges<YunanEntities>
+    //数据库种子的初始化 CreateDatabaseIfNotExists(防止数据迁移时数据库数据被删除)
+    public class SeedingDataInitializer :CreateDatabaseIfNotExists<YunanEntities>
     {
         protected override void Seed(YunanEntities context)
         {

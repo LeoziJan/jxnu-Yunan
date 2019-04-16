@@ -10,7 +10,6 @@ namespace Model.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Model.YunanEntities";
         }
 
         protected override void Seed(Model.YunanEntities context)

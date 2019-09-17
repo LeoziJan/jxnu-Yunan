@@ -1,2 +1,2 @@
 # jxnu-Yunan
-This is My First  Graduation design
+This is my graduation design
